@@ -1,6 +1,3 @@
-/* eslint sort-keys: ["error", "asc"], quote-props: ["error", "consistent"] */
-/* eslint-disable sort-keys */
-
 module.exports = {
   parser: 'babel-eslint',
   env: {
@@ -27,6 +24,11 @@ module.exports = {
       functions: 'ignore',
       imports: 'always-multiline',
       objects: 'always-multiline',
+    }],
+    'space-before-function-paren': ['error', {
+      'anonymous': 'never',
+      'asyncArrow': 'always',
+      'named': 'never',
     }],
   },
 }

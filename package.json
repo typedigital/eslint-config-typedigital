@@ -1,10 +1,10 @@
 {
-  "name": "eslint-config-typedigital",
+  "name": "@typedigital/eslint-config-typedigital",
   "version": "1.0.0",
   "description": "ESLint config for projects of typedigtial",
   "main": "index.js",
   "repository": "https://bitbucket.org/typedigital/eslint-config-typedigital.git",
-  "author": "typedgitial",
+  "author": "typedigital",
   "license": "Unlicense",
   "scripts": {
     "lint": "eslint . --config=index.js",
