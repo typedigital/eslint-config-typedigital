@@ -1,5 +1,5 @@
 {
-  "name": "@typedigital/eslint-config-typedigital",
+  "name": "eslint-config-typedigital",
   "version": "1.0.0",
   "description": "ESLint config for projects of typedigtial",
   "main": "index.js",
