@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-typedigital",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint config for projects of typedigtial",
   "main": "index.js",
   "repository": "https://bitbucket.org/typedigital/eslint-config-typedigital.git",
