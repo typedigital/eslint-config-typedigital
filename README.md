@@ -1,8 +1,12 @@
 # eslint-config-typedigital
 
+![code style typedigital](https://img.shields.io/badge/code%20style-typedigital-f45a5f.svg)
+![npm](https://img.shields.io/npm/v/eslint-config-typedigital.svg)
+
+
 ## configurations
 
-### [`typedigital`](index.js)
+### typedigital
 
 #### Installation
 
@@ -23,7 +27,7 @@ Add an `.eslintrc.json` to the project's root directory with following content:
 }
 ```
 
-### [`typedigital/react`](react.js)
+### typedigital/react
 
 Additional rules for [React](https://facebook.github.io/react/) development.
 
