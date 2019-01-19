@@ -27,5 +27,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-- New visual identity by [@tylerfortune8](https://github.com/tylerfortune8).
-- Version navigation.
+- typedigital rules
+- typedigital/react rules
