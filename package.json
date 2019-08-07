@@ -16,7 +16,8 @@
     "typedigital",
     "react",
     "react-native",
-    "jsx"
+    "jsx",
+    "js"
   ],
   "author": "typedigital",
   "license": "Unlicense",
@@ -24,7 +25,7 @@
     "lint": "npx eslint . --config=base.js",
     "lint-fix": "npx eslint . --config=base.js --fix",
     "test": "eslint ./tests/*.js --config=base.js",
-    "release": "standard-version --"
+    "release": "standard-version"
   },
   "dependencies": {
     "babel-eslint": "^10.0.2",
