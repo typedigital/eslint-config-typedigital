@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.0"></a>
+# 2.1.0 (2019-08-07)
+
+
+### Features
+
+* add new tags and new repository url for npm ([6b42900](https://github.com/typedigital/eslint-config-typedigital/commit/6b42900))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://bitbucket.org/typedigital/eslint-config-typedigital/compare/v1.0.1...v2.0.0) (2019-08-07)
 
