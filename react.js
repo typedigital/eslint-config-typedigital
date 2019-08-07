@@ -49,7 +49,11 @@ module.exports = {
     'react/jsx-child-element-spacing': 'error', // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-child-element-spacing.md
     'react/jsx-closing-bracket-location': 'error', // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md
     'react/jsx-closing-tag-location': 'error', // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
-    'react/jsx-curly-brace-presence': ['error', 'always'], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
+    // * turning on this rule resulted in some strange issues
+    'react/jsx-curly-brace-presence': [
+      'warn',
+      { children: 'ignore', props: 'always' },
+    ], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
     'react/jsx-curly-spacing': ['error', { when: 'never' }], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
     'react/jsx-equals-spacing': ['error', 'never'], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
     'react/jsx-filename-extension': [
