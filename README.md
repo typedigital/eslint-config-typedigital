@@ -3,7 +3,6 @@
 ![code style typedigital](https://img.shields.io/badge/code%20style-typedigital-f45a5f.svg)
 ![npm](https://img.shields.io/npm/v/eslint-config-typedigital.svg)
 
-
 ## configurations
 
 ### typedigital
