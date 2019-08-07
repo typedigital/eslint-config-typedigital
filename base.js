@@ -169,10 +169,10 @@ module.exports = {
     'import/no-named-export': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-export.md
     'import/no-namespace': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-namespace.md
     'import/no-nodejs-modules': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-nodejs-modules.md
-    'import/no-relative-parent-imports': 'warn', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-relative-parent-imports.md
+    'import/no-relative-parent-imports': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-relative-parent-imports.md
     'import/no-restricted-paths': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-restricted-paths.md
     'import/no-self-import': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-self-import.md
-    'import/no-unassigned-import': 'warn', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md
+    'import/no-unassigned-import': ['warn', { 'allow': ['**/*.css', '**/*.scss', '**/*.sass']}], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md
     'import/no-unresolved': ['warn', { commonjs: true }], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
     'import/no-useless-path-segments': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
     'import/no-webpack-loader-syntax': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
