@@ -19,10 +19,9 @@ Add an `.eslintrc` to the project's root directory with following content:
 {
     "extends": [
         // base rule set
-        "typedigital"
+        "typedigital/base"
     ],
     "env": {
-        // enable node globals
         "node": true
     },
     // ignore configs in other directories
@@ -37,7 +36,7 @@ Additional rules for [React](https://facebook.github.io/react/) development.
 ```js
 {
     "extends": [
-        "typedigital",
+        "typedigital/base",
         "typedigital/react"
     ],
     "root": true
@@ -50,7 +49,7 @@ Additional rules for [React Native](https://facebook.github.io/react-native/) de
 ```js
 {
     "extends": [
-        "typedigital",
+        "typedigital/base",
         "typedigital/react",
         "typedigital/react-native"
     ],
