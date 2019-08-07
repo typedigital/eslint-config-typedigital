@@ -9,12 +9,16 @@
 
 #### Installation
 
-Add an `.eslintrc.json` to the project's root directory with following content:
+```shell
+npm i eslint-config-typedigital --save-dev
+```
+
+Add an `.eslintrc` to the project's root directory with following content:
 
 ```js
 {
     "extends": [
-        // base ruleset
+        // base rule set
         "typedigital"
     ],
     "env": {
@@ -35,6 +39,20 @@ Additional rules for [React](https://facebook.github.io/react/) development.
     "extends": [
         "typedigital",
         "typedigital/react"
+    ],
+    "root": true
+}
+```
+### typedigital/react-native
+
+Additional rules for [React Native](https://facebook.github.io/react-native/) development. Should be used with `typedigital/react` rules.
+
+```js
+{
+    "extends": [
+        "typedigital",
+        "typedigital/react",
+        "typedigital/react-native"
     ],
     "root": true
 }
