@@ -56,8 +56,9 @@ module.exports = {
     ], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
     'react/jsx-curly-spacing': ['error', { when: 'never' }], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
     'react/jsx-equals-spacing': ['error', 'never'], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-equals-spacing.md
+    // * turned it off, because expo doesn't support jsx files properly
     'react/jsx-filename-extension': [
-      'error',
+      'off',
       {
         extensions: ['.jsx', '.tsx'],
       },
