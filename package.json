@@ -36,14 +36,14 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-no-unsafe-regex": "^1.0.0",
     "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-optimize-regex": "^1.1.6",
+    "eslint-plugin-optimize-regex": "^1.1.7",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "eslint-plugin-react-native": "^3.7.0"
+    "eslint-plugin-react-native": "^3.8.1"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^6.7.0",
     "standard-version": "^4.4.0"
   }
 }
