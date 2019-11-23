@@ -151,7 +151,7 @@ module.exports = {
     'import/no-absolute-path': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-absolute-path.md
     'import/no-amd': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-amd.md
     'import/no-anonymous-default-export': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-anonymous-default-export.md
-    'import/no-commonjs': 'warn', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-commonjs.md
+    'import/no-commonjs': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-commonjs.md
     // * this rule is computationally expensive. We could try it out and disable it later
     'import/no-cycle': [2, { maxDepth: 1 }], // https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-cycle.md
     'import/no-default-export': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-default-export.md
@@ -178,7 +178,7 @@ module.exports = {
     'import/no-webpack-loader-syntax': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
     'import/order': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
     'import/prefer-default-export': 'warn', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
-    'import/unambiguous': 'warn', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/unambiguous.md
+    'import/unambiguous': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/unambiguous.md
     'indent': ['error', 2], // http://eslint.org/docs/rules/indent
     'init-declarations': 'off', // http://eslint.org/docs/rules/init-declarations
     'jsx-quotes': ['error', 'prefer-single'], // https://eslint.org/docs/rules/jsx-quotes
