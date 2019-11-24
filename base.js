@@ -406,7 +406,7 @@ module.exports = {
     'one-var': ['error', 'never'], // https://eslint.org/docs/rules/one-var
     'one-var-declaration-per-line': 'off', // https://eslint.org/docs/rules/one-var-declaration-per-line
     'operator-assignment': ['warn', 'always'], // https://eslint.org/docs/rules/operator-assignment
-    'operator-linebreak': ['error', 'before'], // https://eslint.org/docs/rules/operator-linebreak
+    'operator-linebreak': ['error', 'before', { 'overrides': { '?': 'after' }}], // https://eslint.org/docs/rules/operator-linebreak
     'optimize-regex/optimize-regex': 'warn', // https://github.com/BrainMaestro/eslint-plugin-optimize-regex/blob/master/README.md
     'padded-blocks': ['error', 'never'], // https://eslint.org/docs/rules/padded-blocks
     // * this needs a lot of investigation for the different options
