@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/typedigital/eslint-config-typedigital/compare/v2.3.0...v2.4.0) (2019-11-24)
+
+
+### Features
+
+* **base:** add overrides to operator-linebreak for "?" operator ([#6](https://github.com/typedigital/eslint-config-typedigital/issues/6)) ([0aaa964](https://github.com/typedigital/eslint-config-typedigital/commit/0aaa964))
+* **base:** added allowed numbers array to no-magic-numbers ([#7](https://github.com/typedigital/eslint-config-typedigital/issues/7)) ([dfe7230](https://github.com/typedigital/eslint-config-typedigital/commit/dfe7230))
+* **base:** added proper webpack.config.js support ([#5](https://github.com/typedigital/eslint-config-typedigital/issues/5)) ([f32c4ec](https://github.com/typedigital/eslint-config-typedigital/commit/f32c4ec))
+* **react:** adjusted react/jsx-curly-brace-presence ([#3](https://github.com/typedigital/eslint-config-typedigital/issues/3)) ([0d36d65](https://github.com/typedigital/eslint-config-typedigital/commit/0d36d65))
+* **react:** turned react/jsx-filename-extension to warn ([#4](https://github.com/typedigital/eslint-config-typedigital/issues/4)) ([749c91b](https://github.com/typedigital/eslint-config-typedigital/commit/749c91b))
+* **react-native:** added react-native/no-single-element-style-arrays ([#10](https://github.com/typedigital/eslint-config-typedigital/issues/10)) ([329a30d](https://github.com/typedigital/eslint-config-typedigital/commit/329a30d))
+
+
+
 <a name="2.3.0"></a>
 # [2.3.0](https://github.com/typedigital/eslint-config-typedigital/compare/v2.2.0...v2.3.0) (2019-08-28)
 
