@@ -290,7 +290,51 @@ module.exports = {
     'no-lone-blocks': 'error', // https://eslint.org/docs/rules/no-lone-blocks
     'no-lonely-if': 'warn', // https://eslint.org/docs/rules/no-lonely-if
     'no-loop-func': 'error', // https://eslint.org/docs/rules/no-loop-func
-    'no-magic-numbers': 'warn', // https://eslint.org/docs/rules/no-magic-numbers
+    'no-magic-numbers': [
+      'warn',
+      {
+        ignore: [
+          // allow digits
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          // allow multiples of 10
+          -1,
+          -10,
+          -100,
+          -1000,
+          10,
+          100,
+          1000,
+          // allow bytes
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          // allow seconds, minutes, hours and days
+          60,
+          24,
+          365,
+          // allow ports
+          80,
+          443,
+          1337,
+          3000,
+          8000,
+          8080,
+        ],
+      },
+    ], // https://eslint.org/docs/rules/no-magic-numbers
     'no-mixed-operators': 'error', // https://eslint.org/docs/rules/no-mixed-operators
     'no-mixed-requires': [
       'error',
