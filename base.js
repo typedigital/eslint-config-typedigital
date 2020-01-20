@@ -1,4 +1,4 @@
-/* eslint sort-keys: ["error", "asc"], quote-props: ["error", "consistent"] */
+/* eslint sort-keys: ["error", "asc"], max-lines: off, quote-props: ["error", "consistent"] */
 /* eslint-disable sort-keys */
 
 module.exports = {
@@ -126,6 +126,7 @@ module.exports = {
     'func-style': ['error', 'declaration', { allowArrowFunctions: true }], // https://eslint.org/docs/rules/func-style
     'generator-star-spacing': ['error', { after: true, before: true }],
     'global-require': 'error', // https://eslint.org/docs/rules/global-require
+    'grouped-accessor-pairs': ['error', 'getBeforeSet'], // https://eslint.org/docs/rules/grouped-accessor-pairs
     'guard-for-in': 'warn', // https://eslint.org/docs/rules/guard-for-in
     'handle-callback-err': ['error', '^(err|error|e)$'], // https://eslint.org/docs/rules/handle-callback-err
     'id-blacklist': ['off'], // https://eslint.org/docs/rules/id-blacklist
@@ -244,6 +245,7 @@ module.exports = {
     'no-console': 'warn', // https://eslint.org/docs/rules/no-console
     'no-const-assign': 'error', // https://eslint.org/docs/rules/no-const-assign
     'no-constant-condition': 'error', // https://eslint.org/docs/rules/no-constant-condition
+    'no-constructor-return': 'error', // https://eslint.org/docs/rules/no-constructor-return
     'no-continue': 'warn', // https://eslint.org/docs/rules/no-continue
     'no-control-regex': 'error', // https://eslint.org/docs/rules/no-control-regex
     'no-debugger': 'error', // https://eslint.org/docs/rules/no-debugger
@@ -251,6 +253,7 @@ module.exports = {
     'no-div-regex': 'warn', // https://eslint.org/docs/rules/no-div-regex
     'no-dupe-args': 'error', // https://eslint.org/docs/rules/no-dupe-args
     'no-dupe-class-members': 'error', // https://eslint.org/docs/rules/no-dupe-class-members
+    'no-dupe-else-if': 'error', // https://eslint.org/docs/rules/no-dupe-else-if
     'no-dupe-keys': 'error', // https://eslint.org/docs/rules/no-dupe-keys
     'no-duplicate-case': 'error', // http://eslint.org/docs/rules/no-duplicate-case
     'no-duplicate-imports': 'off', // this is handled by import/no-duplicates
@@ -380,6 +383,7 @@ module.exports = {
     'no-self-assign': 'error', // https://eslint.org/docs/rules/no-self-assign
     'no-self-compare': 'error', // https://eslint.org/docs/rules/no-self-compare
     'no-sequences': 'error', // https://eslint.org/docs/rules/no-sequences
+    'no-setter-return': 'error', // https://eslint.org/docs/rules/no-setter-return
     'no-shadow': 'warn', // https://eslint.org/docs/rules/no-shadow
     'no-shadow-restricted-names': 'error', // https://eslint.org/docs/rules/no-shadow-restricted-names
     'no-sparse-arrays': 'error', // https://eslint.org/docs/rules/no-sparse-arrays
@@ -458,6 +462,7 @@ module.exports = {
     'prefer-arrow-callback': 'error', // https://eslint.org/docs/rules/prefer-arrow-callback
     'prefer-const': 'error', // https://eslint.org/docs/rules/prefer-const
     'prefer-destructuring': ['error', { array: true, object: true }], // https://eslint.org/docs/rules/prefer-destructuring
+    'prefer-exponentiation-operator': ['warn'], // https://eslint.org/docs/rules/prefer-exponentiation-operator
     'prefer-numeric-literals': 'error', // https://eslint.org/docs/rules/prefer-numeric-literals
     'prefer-promise-reject-errors': 'error', // https://eslint.org/docs/rules/prefer-promise-reject-errors
     'prefer-rest-params': 'warn', // https://eslint.org/docs/rules/prefer-rest-params
