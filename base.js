@@ -73,9 +73,8 @@ module.exports = {
     ], // https://eslint.org/docs/rules/object-curly-spacing & https://github.com/babel/eslint-plugin-babel
     'babel/quotes': ['error', 'single', { allowTemplateLiterals: true }], // https://eslint.org/docs/rules/quotes & https://github.com/babel/eslint-plugin-babel
     'babel/semi': [
-      'error',
-      'never',
-      { beforeStatementContinuationChars: 'never' },
+      'warn',
+      'always',
     ], // https://eslint.org/docs/rules/semi & https://github.com/babel/eslint-plugin-babel
     'babel/valid-typeof': 'error', // https://eslint.org/docs/rules/valid-typeof & https://github.com/babel/eslint-plugin-babel
     'block-scoped-var': 'error', // https://eslint.org/docs/rules/block-scoped-var
@@ -270,8 +269,7 @@ module.exports = {
     'no-extra-boolean-cast': 'error', // https://eslint.org/docs/rules/no-extra-boolean-cast
     'no-extra-label': 'error', // https://eslint.org/docs/rules/no-extra-label
     'no-extra-parens': 'warn', // https://eslint.org/docs/rules/no-extra-parens
-    // * turned off because we don't use semicolons at all (except of very special cases)
-    'no-extra-semi': 'off', // https://eslint.org/docs/rules/no-extra-semi
+    'no-extra-semi': 'error', // https://eslint.org/docs/rules/no-extra-semi
     'no-fallthrough': 'error', // https://eslint.org/docs/rules/no-fallthrough
     'no-floating-decimal': 'error', // https://eslint.org/docs/rules/no-floating-decimal
     'no-func-assign': 'error', // https://eslint.org/docs/rules/no-func-assign
@@ -493,9 +491,8 @@ module.exports = {
     'require-yield': 'warn', // https://eslint.org/docs/rules/require-yield
     'rest-spread-spacing': ['error', 'never'], // https://eslint.org/docs/rules/rest-spread-spacing
     'semi': 'off', // handled by babel/semi
-    // * off because we don't use semicolons
-    'semi-spacing': 'off', // https://eslint.org/docs/rules/semi-spacing
-    'semi-style': ['off', 'last'], // https://eslint.org/docs/rules/semi-style
+    'semi-spacing': ["error", {"before": false, "after": true}], // https://eslint.org/docs/rules/semi-spacing
+    'semi-style': ['error', 'last'], // https://eslint.org/docs/rules/semi-style
     'sort-imports': 'off', // https://eslint.org/docs/rules/sort-imports
     'sort-keys': 'off', // https://eslint.org/docs/rules/sort-keys
     'sort-vars': 'off', // https://eslint.org/docs/rules/sort-vars
