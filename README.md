@@ -1,7 +1,8 @@
-# eslint-config-typedigital
+# @typedigital/eslint-config
 
 ![code style typedigital](https://img.shields.io/badge/code%20style-typedigital-f45a5f.svg)
-![npm](https://img.shields.io/npm/v/eslint-config-typedigital.svg)
+![npm](https://img.shields.io/npm/v/@typedigital/eslint-config.svg)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-fe5196.svg)](https://conventionalcommits.org)
 
 ## configurations
 
@@ -10,7 +11,7 @@
 #### Installation
 
 ```shell
-npm i eslint-config-typedigital --save-dev
+npm i @typedigital/eslint-config --save-dev
 ```
 
 Add an `.eslintrc` to the project's root directory with following content:
@@ -19,7 +20,7 @@ Add an `.eslintrc` to the project's root directory with following content:
 {
     "extends": [
         // base rule set
-        "typedigital/base"
+        "@typedigital/eslint-config"
     ],
     "env": {
         "node": true
@@ -29,29 +30,30 @@ Add an `.eslintrc` to the project's root directory with following content:
 }
 ```
 
-### typedigital/react
+### @typedigital/eslint-config/react
 
 Additional rules for [React](https://facebook.github.io/react/) development.
 
 ```js
 {
     "extends": [
-        "typedigital/base",
-        "typedigital/react"
+        "@typedigital/eslint-config",
+        "@typedigital/eslint-config/react"
     ],
     "root": true
 }
 ```
-### typedigital/react-native
+### @typedigital/eslint-config/react-native
+
 
 Additional rules for [React Native](https://facebook.github.io/react-native/) development. Should be used with `typedigital/react` rules.
 
 ```js
 {
     "extends": [
-        "typedigital/base",
-        "typedigital/react",
-        "typedigital/react-native"
+        "@typedigital/eslint-config",
+        "@typedigital/eslint-config/react",
+        "@typedigital/eslint-config/react-native"
     ],
     "root": true
 }
