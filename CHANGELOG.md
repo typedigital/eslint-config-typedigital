@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/typedigital/eslint-config-typedigital/compare/v2.4.0...v3.0.0) (2020-01-24)
+
+
+### Features
+
+* add issue templates ([#20](https://github.com/typedigital/eslint-config-typedigital/issues/20)) ([b76eae7](https://github.com/typedigital/eslint-config-typedigital/commit/b76eae7)), closes [#14](https://github.com/typedigital/eslint-config-typedigital/issues/14)
+* add semi with warn ([#11](https://github.com/typedigital/eslint-config-typedigital/issues/11)) ([b14b177](https://github.com/typedigital/eslint-config-typedigital/commit/b14b177))
+
+
+* refactor!: renamed package to @typedigital/eslint-config ([051d07b](https://github.com/typedigital/eslint-config-typedigital/commit/051d07b))
+
+
+### BREAKING CHANGES
+
+* renamed package
+
+
+
 <a name="2.4.0"></a>
 # [2.4.0](https://github.com/typedigital/eslint-config-typedigital/compare/v2.3.0...v2.4.0) (2019-11-24)
 
