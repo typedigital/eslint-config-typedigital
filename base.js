@@ -48,7 +48,7 @@ module.exports = {
     'array-func/prefer-flat': 'off', // https://github.com/freaktechnik/eslint-plugin-array-func#prefer-flat
     'array-func/prefer-flat-map': 'warn', // https://github.com/freaktechnik/eslint-plugin-array-func#prefer-flat-map
     'arrow-body-style': ['error', 'as-needed'], // https://eslint.org/docs/rules/arrow-body-style
-    'arrow-parens': ['error', 'as-needed'], // https://eslint.org/docs/rules/arrow-parens
+    'arrow-parens': ['error', 'always'], // https://eslint.org/docs/rules/arrow-parens
     'arrow-spacing': [
       'error',
       {
@@ -268,7 +268,16 @@ module.exports = {
     'no-extra-bind': 'error', // https://eslint.org/docs/rules/no-extra-bind
     'no-extra-boolean-cast': 'error', // https://eslint.org/docs/rules/no-extra-boolean-cast
     'no-extra-label': 'error', // https://eslint.org/docs/rules/no-extra-label
-    'no-extra-parens': 'warn', // https://eslint.org/docs/rules/no-extra-parens
+    // ! turned off rule because it clashes with arrow-parens
+    'no-extra-parens': [
+      'off', 'all', { // exceptions come here:
+        'enforceForArrowConditionals': false,
+        'enforceForNewInMemberExpressions': false,
+        'ignoreJSX': 'all',
+        'nestedBinaryExpressions': false,
+        'returnAssign': false,
+      },
+    ], // https://eslint.org/docs/rules/no-extra-parens
     'no-extra-semi': 'error', // https://eslint.org/docs/rules/no-extra-semi
     'no-fallthrough': 'error', // https://eslint.org/docs/rules/no-fallthrough
     'no-floating-decimal': 'error', // https://eslint.org/docs/rules/no-floating-decimal
@@ -491,7 +500,7 @@ module.exports = {
     'require-yield': 'warn', // https://eslint.org/docs/rules/require-yield
     'rest-spread-spacing': ['error', 'never'], // https://eslint.org/docs/rules/rest-spread-spacing
     'semi': 'off', // handled by babel/semi
-    'semi-spacing': ["error", {"before": false, "after": true}], // https://eslint.org/docs/rules/semi-spacing
+    'semi-spacing': ['error', { 'after': true, 'before': false }], // https://eslint.org/docs/rules/semi-spacing
     'semi-style': ['error', 'last'], // https://eslint.org/docs/rules/semi-style
     'sort-imports': 'off', // https://eslint.org/docs/rules/sort-imports
     'sort-keys': 'off', // https://eslint.org/docs/rules/sort-keys
@@ -547,4 +556,4 @@ module.exports = {
     'yield-star-spacing': ['error', 'both'], // https://eslint.org/docs/rules/yield-star-spacing
     'yoda': ['error', 'never'], // https://eslint.org/docs/rules/yoda
   },
-}
+};
