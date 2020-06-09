@@ -62,7 +62,7 @@ module.exports = {
         extensions: ['.jsx', '.tsx'],
       },
     ], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-    'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
+    'react/jsx-first-prop-new-line': ['error', 'multiline'], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
     'react/jsx-handler-names': [
       'error',
       {
@@ -76,7 +76,8 @@ module.exports = {
     'react/jsx-max-props-per-line': [
       'error',
       {
-        maximum: 3,
+        maximum: 1,
+        when: 'multiline'
       },
     ], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
     'react/jsx-no-bind': [
