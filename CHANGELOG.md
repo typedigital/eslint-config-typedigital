@@ -1,6 +1,22 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [4.0.0](https://github.com/typedigital/eslint-config-typedigital/compare/v3.0.0...v4.0.0) (2020-06-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* **react:** this could break CI pipelines.
+
+### Features
+
+* **react:** consistent multiline in react ([#31](https://github.com/typedigital/eslint-config-typedigital/issues/31)) ([c7ef72a](https://github.com/typedigital/eslint-config-typedigital/commit/c7ef72acfd51b472540c04ef0932f9fc1e7a1cde)), closes [#30](https://github.com/typedigital/eslint-config-typedigital/issues/30)
+
+
+### Bug Fixes
+
+* no-extra-parens clashes with arrow-parens ([#29](https://github.com/typedigital/eslint-config-typedigital/issues/29)) ([161ee4c](https://github.com/typedigital/eslint-config-typedigital/commit/161ee4cdb98180d47572a165d9d6e8e9010bf5a3)), closes [#27](https://github.com/typedigital/eslint-config-typedigital/issues/27)
 
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/typedigital/eslint-config-typedigital/compare/v2.4.0...v3.0.0) (2020-01-24)
