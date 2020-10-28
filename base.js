@@ -89,7 +89,7 @@ module.exports = {
       {
         arrays: 'always-multiline',
         exports: 'always-multiline',
-        functions: 'ignore',
+        functions: 'always-multiline',
         imports: 'always-multiline',
         objects: 'always-multiline',
       },
