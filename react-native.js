@@ -11,4 +11,4 @@ module.exports = {
     'react-native/no-unused-styles': 'error', // https://github.com/Intellicode/eslint-plugin-react-native/blob/da07c9ae222a98c7a1652ebe6d9d13dcc2225ef5/docs/rules/no-unused-styles.md
     'react-native/split-platform-components': 'warn', // https://github.com/Intellicode/eslint-plugin-react-native/blob/da07c9ae222a98c7a1652ebe6d9d13dcc2225ef5/docs/rules/split-platform-components.md
   },
-}
+};

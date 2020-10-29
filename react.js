@@ -77,7 +77,7 @@ module.exports = {
       'error',
       {
         maximum: 1,
-        when: 'multiline'
+        when: 'multiline',
       },
     ], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
     'react/jsx-no-bind': [
@@ -172,4 +172,4 @@ module.exports = {
     'react/style-prop-object': 'error', // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
     'react/void-dom-elements-no-children': 'error', // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
   },
-}
+};
