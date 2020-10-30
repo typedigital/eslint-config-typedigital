@@ -4,7 +4,7 @@
 module.exports = {
   parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
   env: {
@@ -19,12 +19,14 @@ module.exports = {
     'array-func',
     'optimize-regex',
     'no-unsafe-regex',
+    'node',
   ],
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',
     'plugin:promise/recommended',
     'plugin:array-func/recommended',
+    'plugin:node/recommended',
   ],
   rules: {
     /* eslint-enable sort-keys */
@@ -372,8 +374,6 @@ module.exports = {
     'no-param-reassign': 'error', // https://eslint.org/docs/rules/no-param-reassign
     'no-path-concat': 'warn', // https://eslint.org/docs/rules/no-path-concat
     'no-plusplus': ['warn', { allowForLoopAfterthoughts: true }], // https://eslint.org/docs/rules/no-plusplus
-    'no-process-env': 'warn', // https://eslint.org/docs/rules/no-process-env
-    'no-process-exit': 'warn', // https://eslint.org/docs/rules/no-process-exit
     'no-proto': 'error', // https://eslint.org/docs/rules/no-proto
     'no-prototype-builtins': 'error', // https://eslint.org/docs/rules/no-prototype-builtins
     'no-redeclare': 'error', // https://eslint.org/docs/rules/no-redeclare
@@ -443,6 +443,8 @@ module.exports = {
     ], // https://eslint.org/docs/rules/no-warning-comments
     'no-whitespace-before-property': 'error', // https://eslint.org/docs/rules/no-whitespace-before-property
     'no-with': 'error', // https://eslint.org/docs/rules/no-with
+    'node/no-process-env': ['off'], // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-process-env.md
+    'node/no-process-exit': 'warn', // https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-process-exit.md
     'object-curly-newline': [
       'error',
       {
