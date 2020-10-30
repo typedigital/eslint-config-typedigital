@@ -225,7 +225,7 @@ module.exports = {
     'max-params': ['warn', { max: 3 }], // https://eslint.org/docs/rules/max-params
     'max-statements': 'off', // https://eslint.org/docs/rules/max-statements
     'max-statements-per-line': ['error', { max: 1 }], // https://eslint.org/docs/rules/max-statements-per-line
-    'multiline-ternary': ['error', 'always-multiline'], // https://eslint.org/docs/rules/multiline-ternary
+    'multiline-ternary': ['off', 'always-multiline'], // https://eslint.org/docs/rules/multiline-ternary
     'new-cap': 'off', // this is handled by babel/new-cap
     'new-parens': ['error'], // https://eslint.org/docs/rules/new-parens
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }], // https://eslint.org/docs/rules/newline-per-chained-call
