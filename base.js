@@ -226,7 +226,7 @@ module.exports = {
     'max-nested-callbacks': ['warn', { max: 5 }], // https://eslint.org/docs/rules/max-nested-callbacks
     'max-params': ['warn', { max: 3 }], // https://eslint.org/docs/rules/max-params
     'max-statements': 'off', // https://eslint.org/docs/rules/max-statements
-    'max-statements-per-line': ['error', { max: 1 }], // https://eslint.org/docs/rules/max-statements-per-line
+    'max-statements-per-line': ['error', { max: 2 }], // https://eslint.org/docs/rules/max-statements-per-line
     'multiline-ternary': ['off', 'always-multiline'], // https://eslint.org/docs/rules/multiline-ternary
     'new-cap': 'off', // this is handled by babel/new-cap
     'new-parens': ['error'], // https://eslint.org/docs/rules/new-parens
