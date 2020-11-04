@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.1.1](https://github.com/typedigital/eslint-config-typedigital/compare/v4.1.0...v4.1.1) (2020-11-04)
+
+
+### Bug Fixes
+
+* removed node/recommended ([#43](https://github.com/typedigital/eslint-config-typedigital/issues/43)) ([767edcd](https://github.com/typedigital/eslint-config-typedigital/commit/767edcdff776b16ee889c608a359bd89ff0304be))
+
 ## [4.1.0](https://github.com/typedigital/eslint-config-typedigital/compare/v4.0.0...v4.1.0) (2020-11-04)
 
 
