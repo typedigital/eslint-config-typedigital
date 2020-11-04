@@ -26,7 +26,6 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:promise/recommended',
     'plugin:array-func/recommended',
-    'plugin:node/recommended',
   ],
   rules: {
     /* eslint-enable sort-keys */
