@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.1.0](https://github.com/typedigital/eslint-config-typedigital/compare/v4.0.0...v4.1.0) (2020-11-04)
+
+
+### Features
+
+* added eslint-node-plugin ([#40](https://github.com/typedigital/eslint-config-typedigital/issues/40)) ([fce0b98](https://github.com/typedigital/eslint-config-typedigital/commit/fce0b98c126b24c598dd73fd9ca9c742c6175e97)), closes [#26](https://github.com/typedigital/eslint-config-typedigital/issues/26)
+
+
+### Bug Fixes
+
+* maximum statements per line should accept two statements ([#42](https://github.com/typedigital/eslint-config-typedigital/issues/42)) ([f22324e](https://github.com/typedigital/eslint-config-typedigital/commit/f22324ebb075f5a59e202d8f73b07cceda8f9832)), closes [#25](https://github.com/typedigital/eslint-config-typedigital/issues/25)
+* trailing commas in functions parameter list (single line) ([#39](https://github.com/typedigital/eslint-config-typedigital/issues/39)) ([c9acc04](https://github.com/typedigital/eslint-config-typedigital/commit/c9acc0468be150e3701146dfe4ba99e586f9326b)), closes [#34](https://github.com/typedigital/eslint-config-typedigital/issues/34)
+* weird ternary by turning rule off ([#38](https://github.com/typedigital/eslint-config-typedigital/issues/38)) ([9be956d](https://github.com/typedigital/eslint-config-typedigital/commit/9be956d72d6ac6e1a2822a8f3e3c40984505409d)), closes [#37](https://github.com/typedigital/eslint-config-typedigital/issues/37)
+
 ## [4.0.0](https://github.com/typedigital/eslint-config-typedigital/compare/v3.0.0...v4.0.0) (2020-06-09)
 
 
