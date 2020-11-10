@@ -122,6 +122,7 @@ module.exports = {
     'for-direction': 'error', // https://eslint.org/docs/rules/for-direction
     'func-call-spacing': ['error', 'never'], // https://eslint.org/docs/rules/func-call-spacing
     'func-name-matching': ['warn', 'always'], // https://eslint.org/docs/rules/func-name-matching
+    'func-paren-newline': ['error', 'multiline'], // https://eslint.org/docs/rules/function-paren-newline
     'func-names': ['error', 'as-needed'], // https://eslint.org/docs/rules/func-names
     'func-style': ['error', 'declaration', { allowArrowFunctions: true }], // https://eslint.org/docs/rules/func-style
     'generator-star-spacing': ['error', { after: true, before: true }],
