@@ -2,11 +2,12 @@
 /* eslint-disable sort-keys */
 
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-  },
+    sourceType: "module",
+    ecmaVersion: 2021,
+    requireConfigFile: false,
+},
   env: {
     es6: true,
     node: true,
@@ -15,7 +16,7 @@ module.exports = {
     'jsdoc',
     'import',
     'promise',
-    'babel',
+    '@babel',
     'array-func',
     'optimize-regex',
     'no-unsafe-regex',
@@ -57,32 +58,29 @@ module.exports = {
         before: true,
       },
     ], // https://eslint.org/docs/rules/arrow-spacing
-    'babel/camelcase': 'error', // https://eslint.org/docs/rules/camelcase & https://github.com/babel/eslint-plugin-babel
-    'babel/new-cap': 'error', // https://eslint.org/docs/rules/new-cap & https://github.com/babel/eslint-plugin-babel
-    'babel/no-invalid-this': 'error', // https://eslint.org/docs/rules/no-invalid-this & https://github.com/babel/eslint-plugin-babel
-    'babel/no-unused-expressions': [
+    '@babel/new-cap': 'error', // https://eslint.org/docs/rules/new-cap & https://github.com/@babel/eslint-plugin-abel
+    '@babel/no-invalid-this': 'error', // https://eslint.org/docs/rules/no-invalid-this & https://github.com/@babel/eslint-plugin-@babel
+    '@babel/no-unused-expressions': [
       'error',
       {
         allowShortCircuit: true,
         allowTernary: true,
       },
-    ], // https://eslint.org/docs/rules/no-unused-expressions & https://github.com/babel/eslint-plugin-babel
-    'babel/object-curly-spacing': [
+    ], // https://eslint.org/docs/rules/no-unused-expressions & https://github.com/@babel/eslint-plugin-babel
+    '@babel/object-curly-spacing': [
       'error',
       'always',
-      { arraysInObjects: false, objectsInObjects: false },
-    ], // https://eslint.org/docs/rules/object-curly-spacing & https://github.com/babel/eslint-plugin-babel
-    'babel/quotes': ['error', 'single', { allowTemplateLiterals: true }], // https://eslint.org/docs/rules/quotes & https://github.com/babel/eslint-plugin-babel
-    'babel/semi': [
+      { arraysInObjects: true, objectsInObjects: true },
+    ], // https://eslint.org/docs/rules/object-curly-spacing & https://github.com/@babel/eslint-plugin-@babel
+    '@babel/semi': [
       'warn',
       'always',
-    ], // https://eslint.org/docs/rules/semi & https://github.com/babel/eslint-plugin-babel
-    'babel/valid-typeof': 'error', // https://eslint.org/docs/rules/valid-typeof & https://github.com/babel/eslint-plugin-babel
+    ], // https://eslint.org/docs/rules/semi & https://github.com/@babel/eslint-plugin-@babel
     'block-scoped-var': 'error', // https://eslint.org/docs/rules/block-scoped-var
     'block-spacing': 'error', // https://eslint.org/docs/rules/block-spacing
     'brace-style': ['error', '1tbs', { allowSingleLine: true }], // https://eslint.org/docs/rules/brace-style
     'callback-return': ['warn', ['callback', 'cb', 'next', 'done']],
-    'camelcase': 'off', // off due to babel/camelcase
+    'camelcase': 'warn',
     'capitalized-comments': ['off'], // https://eslint.org/docs/rules/capitalized-comments
     'class-methods-use-this': ['warn'], // https://eslint.org/docs/rules/class-methods-use-this
     'comma-dangle': [
@@ -122,7 +120,7 @@ module.exports = {
     'for-direction': 'error', // https://eslint.org/docs/rules/for-direction
     'func-call-spacing': ['error', 'never'], // https://eslint.org/docs/rules/func-call-spacing
     'func-name-matching': ['warn', 'always'], // https://eslint.org/docs/rules/func-name-matching
-    'func-paren-newline': ['error', 'multiline'], // https://eslint.org/docs/rules/function-paren-newline
+    // 'func-paren-newline': ['error', 'multiline'], // https://eslint.org/docs/rules/function-paren-newline
     'func-names': ['error', 'as-needed'], // https://eslint.org/docs/rules/func-names
     'func-style': ['error', 'declaration', { allowArrowFunctions: true }], // https://eslint.org/docs/rules/func-style
     'generator-star-spacing': ['error', { after: true, before: true }],
@@ -228,7 +226,7 @@ module.exports = {
     'max-statements': 'off', // https://eslint.org/docs/rules/max-statements
     'max-statements-per-line': ['error', { max: 2 }], // https://eslint.org/docs/rules/max-statements-per-line
     'multiline-ternary': ['off', 'always-multiline'], // https://eslint.org/docs/rules/multiline-ternary
-    'new-cap': 'off', // this is handled by babel/new-cap
+    'new-cap': 'off', // this is handled by @babel/new-cap
     'new-parens': ['error'], // https://eslint.org/docs/rules/new-parens
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }], // https://eslint.org/docs/rules/newline-per-chained-call
     'no-alert': 'warn', // https://eslint.org/docs/rules/no-alert
@@ -293,7 +291,7 @@ module.exports = {
     // * default is only functions - with "both" we ensure that vars cannot be declarated in nested blocks
     'no-inner-declarations': ['error', 'both'], // https://eslint.org/docs/rules/no-inner-declarations
     'no-invalid-regexp': 'error', // https://eslint.org/docs/rules/no-invalid-regexp
-    // * handled by babel/no-invalid-this
+    // * handled by @babel/no-invalid-this
     'no-invalid-this': 'off', // https://eslint.org/docs/rules/no-invalid-this
     'no-irregular-whitespace': 'error', // https://eslint.org/docs/rules/no-irregular-whitespace
     'no-iterator': 'error', // https://eslint.org/docs/rules/no-iterator
@@ -419,7 +417,7 @@ module.exports = {
     'no-unsafe-finally': 'error', // https://eslint.org/docs/rules/no-unsafe-finally
     'no-unsafe-negation': 'error', // https://eslint.org/docs/rules/no-unsafe-negation
     'no-unsafe-regex/no-unsafe-regex': 'error', // https://github.com/kgryte/eslint-plugin-no-unsafe-regex
-    'no-unused-expressions': 'off', // handled by babel/no-unused-expressions
+    'no-unused-expressions': 'off', // handled by @babel/no-unused-expressions
     'no-unused-labels': 'error', // https://eslint.org/docs/rules/no-unused-labels
     // * maybe we need further adjustments - but let's try it out like this first
     'no-unused-vars': 'error', // https://eslint.org/docs/rules/no-unused-vars
@@ -452,7 +450,7 @@ module.exports = {
         multiline: true,
       },
     ], // https://eslint.org/docs/rules/object-curly-newline
-    'object-curly-spacing': 'off', // handled by babel/object-curly-spacing
+    'object-curly-spacing': 'off', // handled by @babel/object-curly-spacing
     'object-property-newline': [
       'error',
       {
@@ -494,14 +492,14 @@ module.exports = {
     'promise/prefer-await-to-then': 'warn', // https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/prefer-await-to-then.md
     'promise/valid-params': 'error', // https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/valid-params.md
     'quote-props': ['error', 'consistent-as-needed'], // https://eslint.org/docs/rules/quote-props
-    'quotes': 'off', // handled by babel/quotes
+    'quotes': ['error', 'single', { allowTemplateLiterals: true }], // handled by @babel/quotes
     'radix': ['warn', 'always'], // https://eslint.org/docs/rules/radix
     'require-await': 'off', // https://eslint.org/docs/rules/require-await
     // ! turned off because it's a deprecated rule
     'require-jsdoc': 'off', // https://eslint.org/docs/rules/require-jsdoc
     'require-yield': 'warn', // https://eslint.org/docs/rules/require-yield
     'rest-spread-spacing': ['error', 'never'], // https://eslint.org/docs/rules/rest-spread-spacing
-    'semi': 'off', // handled by babel/semi
+    'semi': 'off', // handled by @babel/semi
     'semi-spacing': ['error', { 'after': true, 'before': false }], // https://eslint.org/docs/rules/semi-spacing
     'semi-style': ['error', 'last'], // https://eslint.org/docs/rules/semi-style
     'sort-imports': 'off', // https://eslint.org/docs/rules/sort-imports
@@ -551,7 +549,7 @@ module.exports = {
         requireReturnDescription: false,
       },
     ], // https://eslint.org/docs/rules/valid-jsdoc
-    'valid-typeof': 'off', // handled by babel/valid-typeof
+    'valid-typeof': 'off', // handled by @babel/valid-typeof
     'vars-on-top': 'error', // https://eslint.org/docs/rules/vars-on-top
     'wrap-iife': 'off', // https://eslint.org/docs/rules/wrap-iife
     'wrap-regex': 'warn', // https://eslint.org/docs/rules/wrap-regex
