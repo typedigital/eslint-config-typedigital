@@ -36,7 +36,31 @@ module.exports = {
         "@typescript-eslint/ban-tslint-comment": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-tslint-comment.md
         "@typescript-eslint/ban-types": [
             "warn",
-            options["@typescript-eslint/ban-types"],
+            {
+                types: {
+                    // Default options taken from https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/rules/ban-types.ts
+                    String: {
+                        message: "Use string instead",
+                        fixWith: "string",
+                    },
+                    Boolean: {
+                        message: "Use boolean instead",
+                        fixWith: "boolean",
+                    },
+                    Number: {
+                        message: "Use number instead",
+                        fixWith: "number",
+                    },
+                    Object: {
+                        message: "Use Record<string, unknown> instead",
+                        fixWith: "Record<string, unknown>",
+                    },
+                    Symbol: {
+                        message: "Use symbol instead",
+                        fixWith: "symbol",
+                    },
+                },
+            },
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-types.md
         "@typescript-eslint/brace-style": [
             "warn",
@@ -93,7 +117,8 @@ module.exports = {
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
         "@typescript-eslint/func-call-spacing": ["warn"], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/func-call-spacing.md
         "@typescript-eslint/generic-type-naming": "off", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/generic-type-naming.md
-        "@typescript-eslint/indent": ["warn", 4, options["indent"]], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
+        // TODO: check @timidak
+        "@typescript-eslint/indent": ["warn", 4,], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
         "@typescript-eslint/init-declarations": "off", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/init-declarations.md
         "@typescript-eslint/lines-between-class-members": [
             "warn",
@@ -103,6 +128,7 @@ module.exports = {
                 exceptAfterOverload: true,
             },
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
+        // TODO: check @timidak
         "@typescript-eslint/member-delimiter-style": [
             "warn",
             {
@@ -135,9 +161,7 @@ module.exports = {
         "@typescript-eslint/no-base-to-string": "off", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-base-to-string.md
         "@typescript-eslint/no-base-to-string": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-base-to-string.md
         "@typescript-eslint/no-confusing-non-null-assertion": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-confusing-non-null-assertion.md
-        // There are too many false positives with this rule
-        // Additionally, there are situations where you just want to pass on the returned value even
-        // when it's currently annotated as 'void'
+        // TODO: check @timidak
         "@typescript-eslint/no-confusing-void-expression": [
             "off",
             {
@@ -150,6 +174,7 @@ module.exports = {
         "@typescript-eslint/no-dynamic-delete": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
         "@typescript-eslint/no-empty-function": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
         "@typescript-eslint/no-empty-interface": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-interface.md
+        // TODO: check @timidak
         "@typescript-eslint/no-explicit-any": [
             "warn",
             {
@@ -160,6 +185,7 @@ module.exports = {
         "@typescript-eslint/no-extra-non-null-assertion": ["warn"], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-non-null-assertion.md
         "@typescript-eslint/no-extra-parens": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
         "@typescript-eslint/no-extraneous-class": "off", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extraneous-class.md
+        // TODO: check @timidak
         "@typescript-eslint/no-floating-promises": [
             "off",
             {
@@ -202,8 +228,10 @@ module.exports = {
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-this-alias.md
         "@typescript-eslint/no-throw-literal": "off", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-throw-literal.md
         "@typescript-eslint/no-type-alias": "off", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-type-alias.md
+        // TODO: check @timidak
         "@typescript-eslint/no-unnecessary-boolean-literal-compare":
             "error", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-boolean-literal-compare.md
+        // TODO: check @timidak
         "@typescript-eslint/no-unnecessary-condition": [
             "error",
             {
@@ -214,7 +242,8 @@ module.exports = {
         "@typescript-eslint/no-unnecessary-type-arguments": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-arguments.md
         "@typescript-eslint/no-unnecessary-type-assertion": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-assertion.md
         "@typescript-eslint/no-unnecessary-type-constraint": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-type-constraint.md
-        // AK really likes any so i think these rules might be too strickt
+        // TODO: check @timidak
+        // @timidak really likes any so i think these rules might be too strickt
         // i'm keeping no-unsafe-return so his "any" madness does not leak into the rest of the application
         "@typescript-eslint/no-unsafe-assignment": "off", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-assignment.md
         "@typescript-eslint/no-unsafe-call": "off", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unsafe-call.md
@@ -274,12 +303,14 @@ module.exports = {
                 checkMethodDeclarations: true,
             },
         ], // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
+        // TODO: check @timidak
         // def. needs testing
         "@typescript-eslint/quotes": ["warn", "backtick", {
             avoidEscape: true,
         },
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md
         "@typescript-eslint/require-await": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/require-await.md
+        // TODO: check @timidak
         "@typescript-eslint/return-await": ["warn", "in-try-catch"], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/return-await.md
         // default is always
         "@typescript-eslint/semi": ["warn"], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/semi.md
@@ -320,6 +351,7 @@ module.exports = {
         "import/no-unresolved": "off", // TypeScript should catch it anyway
         indent: "off",
         "lines-between-class-members": "off", // covered by @typescript-eslint/lines-between-class-members
+        // TODO: check @timidak
         'max-len': [
             'warn',
             {
@@ -333,6 +365,7 @@ module.exports = {
                 tabWidth: 2,
             },
         ], // https://eslint.org/docs/rules/max-len
+        // TODO: check @timidak
         'max-lines': [
             'warn',
             { max: 300, skipBlankLines: true, skipComments: true },
