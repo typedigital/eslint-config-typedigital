@@ -49,5 +49,8 @@
   "devDependencies": {
     "standard-version": "^9.0.0",
     "eslint": "^7.20.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.12.0"
   }
 }
