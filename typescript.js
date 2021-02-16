@@ -10,7 +10,6 @@ module.exports = {
     },
     plugins: [
         'import',
-        'mocha',
     ],
     env: {
         'node': true,
@@ -117,7 +116,7 @@ module.exports = {
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md
         "@typescript-eslint/func-call-spacing": ["warn"], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/func-call-spacing.md
         "@typescript-eslint/generic-type-naming": "off", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/generic-type-naming.md
-        "@typescript-eslint/indent": ["warn", 4,], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
+        "@typescript-eslint/indent": ["error", 2], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
         "@typescript-eslint/init-declarations": "off", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/init-declarations.md
         "@typescript-eslint/lines-between-class-members": [
             "warn",
@@ -131,11 +130,11 @@ module.exports = {
             "warn",
             {
                 multiline: {
-                    delimiter: "semi",
+                    delimiter: "comma",
                     requireLast: true,
                 },
                 singleline: {
-                    delimiter: "semi",
+                    delimiter: "comma",
                     requireLast: false,
                 },
             },
@@ -160,7 +159,7 @@ module.exports = {
         "@typescript-eslint/no-base-to-string": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-base-to-string.md
         "@typescript-eslint/no-confusing-non-null-assertion": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-confusing-non-null-assertion.md
         "@typescript-eslint/no-confusing-void-expression": [
-            "off",
+            "warn",
             {
                 ignoreArrowShorthand: true,
                 ignoreVoidOperator: true,
@@ -174,7 +173,7 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": [
             "warn",
             {
-                fixToUnknown: true,
+                fixToUnknown: false,
                 ignoreRestArgs: true,
             },
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-explicit-any.md
@@ -182,7 +181,7 @@ module.exports = {
         "@typescript-eslint/no-extra-parens": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
         "@typescript-eslint/no-extraneous-class": "off", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extraneous-class.md
         "@typescript-eslint/no-floating-promises": [
-            "off",
+            "warn",
             {
                 ignoreVoid: true,
             },
@@ -226,9 +225,9 @@ module.exports = {
         "@typescript-eslint/no-unnecessary-boolean-literal-compare":
             "error", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-boolean-literal-compare.md
         "@typescript-eslint/no-unnecessary-condition": [
-            "error",
+            "warn",
             {
-                allowConstantLoopConditions: true,
+                allowConstantLoopConditions: false,
             },
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-condition.md
         "@typescript-eslint/no-unnecessary-qualifier": "warn", // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unnecessary-qualifier.md
