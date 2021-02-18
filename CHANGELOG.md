@@ -125,21 +125,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 * a lot of rules have changed this might lead to multiple errors and warnings in your code base.
 
-
-
-# Changelog
-
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
-
-## [Unreleased]
-
-## Added
-
-- typedigital/flow
-- typedigital/react-native
-
 ## [1.0.1] - 2018-11-24
 
 ### Added
