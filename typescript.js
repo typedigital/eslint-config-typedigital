@@ -42,25 +42,25 @@ module.exports = {
           {
             types: {
               // Default options taken from https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/rules/ban-types.ts
-              String: {
-                message: 'Use string instead',
-                fixWith: 'string',
-              },
               Boolean: {
-                message: 'Use boolean instead',
                 fixWith: 'boolean',
+                message: 'Use boolean instead',
               },
               Number: {
-                message: 'Use number instead',
                 fixWith: 'number',
+                message: 'Use number instead',
               },
               Object: {
-                message: 'Use Record<string, unknown> instead',
                 fixWith: 'Record<string, unknown>',
+                message: 'Use Record<string, unknown> instead',
+              },
+              String: {
+                fixWith: 'string',
+                message: 'Use string instead',
               },
               Symbol: {
-                message: 'Use symbol instead',
                 fixWith: 'symbol',
+                message: 'Use symbol instead',
               },
             },
           },
@@ -124,8 +124,8 @@ module.exports = {
           'warn',
           'always',
           {
-            exceptAfterSingleLine: true,
             exceptAfterOverload: true,
+            exceptAfterSingleLine: true,
           },
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
         '@typescript-eslint/member-delimiter-style': [
@@ -157,7 +157,6 @@ module.exports = {
           },
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
         '@typescript-eslint/no-array-constructor': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-array-constructor.md
-        '@typescript-eslint/no-base-to-string': 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-base-to-string.md
         '@typescript-eslint/no-base-to-string': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-base-to-string.md
         '@typescript-eslint/no-confusing-non-null-assertion': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-confusing-non-null-assertion.md
         '@typescript-eslint/no-confusing-void-expression': [

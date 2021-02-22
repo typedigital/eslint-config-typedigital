@@ -30,6 +30,24 @@ module.exports = {
   ],
   rules: {
     /* eslint-enable sort-keys */
+    '@babel/new-cap': 'error', // https://eslint.org/docs/rules/new-cap & https://github.com/@babel/eslint-plugin-abel
+    '@babel/no-invalid-this': 'error', // https://eslint.org/docs/rules/no-invalid-this & https://github.com/@babel/eslint-plugin-@babel
+    '@babel/no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: true,
+        allowTernary: true,
+      },
+    ], // https://eslint.org/docs/rules/no-unused-expressions & https://github.com/@babel/eslint-plugin-babel
+    '@babel/object-curly-spacing': [
+      'error',
+      'always',
+      { arraysInObjects: true, objectsInObjects: true },
+    ], // https://eslint.org/docs/rules/object-curly-spacing & https://github.com/@babel/eslint-plugin-@babel
+    '@babel/semi': [
+      'warn',
+      'always',
+    ], // https://eslint.org/docs/rules/semi & https://github.com/@babel/eslint-plugin-@babel
     'accessor-pairs': [
       'warn',
       {
@@ -58,24 +76,6 @@ module.exports = {
         before: true,
       },
     ], // https://eslint.org/docs/rules/arrow-spacing
-    '@babel/new-cap': 'error', // https://eslint.org/docs/rules/new-cap & https://github.com/@babel/eslint-plugin-abel
-    '@babel/no-invalid-this': 'error', // https://eslint.org/docs/rules/no-invalid-this & https://github.com/@babel/eslint-plugin-@babel
-    '@babel/no-unused-expressions': [
-      'error',
-      {
-        allowShortCircuit: true,
-        allowTernary: true,
-      },
-    ], // https://eslint.org/docs/rules/no-unused-expressions & https://github.com/@babel/eslint-plugin-babel
-    '@babel/object-curly-spacing': [
-      'error',
-      'always',
-      { arraysInObjects: true, objectsInObjects: true },
-    ], // https://eslint.org/docs/rules/object-curly-spacing & https://github.com/@babel/eslint-plugin-@babel
-    '@babel/semi': [
-      'warn',
-      'always',
-    ], // https://eslint.org/docs/rules/semi & https://github.com/@babel/eslint-plugin-@babel
     'block-scoped-var': 'error', // https://eslint.org/docs/rules/block-scoped-var
     'block-spacing': 'error', // https://eslint.org/docs/rules/block-spacing
     'brace-style': ['error', '1tbs', { allowSingleLine: true }], // https://eslint.org/docs/rules/brace-style
