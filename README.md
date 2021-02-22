@@ -4,17 +4,17 @@
 ![npm](https://img.shields.io/npm/v/@typedigital/eslint-config.svg)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-fe5196.svg)](https://conventionalcommits.org)
 
-## configurations
-
-### typedigital
-
-#### Installation
+## Installation
 
 ```shell
 npm i @typedigital/eslint-config --save-dev
 ```
+## Configurations
 
-Add an `.eslintrc` to the project's root directory with following content:
+### @typedigital - the base config
+
+
+To use our eslint coding guidelines add an `.eslintrc` to the project's root directory with following content:
 
 ```js
 {
@@ -30,9 +30,12 @@ Add an `.eslintrc` to the project's root directory with following content:
 }
 ```
 
+This will tell eslint to use our basic configuration for JavaScript projects.
+
 ### @typedigital/eslint-config/react
 
 Additional rules for [React](https://facebook.github.io/react/) development.
+To add them to your project adjust your `.eslintrc` like this:
 
 ```js
 {
@@ -47,6 +50,7 @@ Additional rules for [React](https://facebook.github.io/react/) development.
 
 
 Additional rules for [React Native](https://facebook.github.io/react-native/) development. Should be used with `typedigital/react` rules.
+To add them to your project adjust your `.eslintrc` like this:
 
 ```js
 {
@@ -58,10 +62,24 @@ Additional rules for [React Native](https://facebook.github.io/react-native/) de
     "root": true
 }
 ```
+### @typedigital/eslint-config/typescript
+
+Due to the fact that [TypeScript](https://www.typescriptlang.org/) has gained so much popularity in the last few years and most of our new developments are based on TypeScript, we decided to extend our code guidelines.
+To use our TypeScript configuration you just need to add the following to your `.eslintrc`:
+
+```js
+{
+    "extends": [
+        "@typedigital/eslint-config",
+        "@typedigital/eslint-config/typescript",
+    ],
+    "root": true
+}
+```
+
+> Note that you can use the React and React Native configuration with this configuration, too. Just add the other configurations after `"@typedigital/eslint-config/typescript"`.
 
 ## Recommendations
-
-### disabling rules
 
 Sometimes, there is a legitimate use-case to disable a specific rule. You can disable a rule for the current line like this
 
@@ -71,9 +89,8 @@ Sometimes, there is a legitimate use-case to disable a specific rule. You can di
 
 where `rule-code` is the code that is displayed along the error message.
 
-In rare cases, it makes sense to disable a rule for the whole project. For instance, if you work with JSON data coming from a foregin API that uses underscore property names.
-
-If you don't agree with a rule, please do not just disable the rule. It's better to create an issue here in order to discuss the pros and cons of a rule.
+You can also override specific rules in your `.eslintrc`, this will then override it for the whole project.
+If you don't agree with a rule, please don't just disable the rule - create an issue and let us discuss the pros and cons.
 
 ## License
 

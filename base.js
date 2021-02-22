@@ -4,10 +4,10 @@
 module.exports = {
   parser: '@babel/eslint-parser',
   parserOptions: {
-    sourceType: "module",
+    sourceType: 'module',
     ecmaVersion: 2021,
     requireConfigFile: false,
-},
+  },
   env: {
     es6: true,
     node: true,
@@ -172,7 +172,7 @@ module.exports = {
     'import/no-relative-parent-imports': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-relative-parent-imports.md
     'import/no-restricted-paths': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-restricted-paths.md
     'import/no-self-import': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-self-import.md
-    'import/no-unassigned-import': ['warn', { 'allow': ['**/*.css', '**/*.scss', '**/*.sass']}], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md
+    'import/no-unassigned-import': ['warn', { 'allow': ['**/*.css', '**/*.scss', '**/*.sass'] }], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md
     'import/no-unresolved': ['warn', { commonjs: true }], // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
     'import/no-useless-path-segments': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
     'import/no-webpack-loader-syntax': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
@@ -259,7 +259,7 @@ module.exports = {
     'no-else-return': 'error', // https://eslint.org/docs/rules/no-else-return
     'no-empty': 'error', // https://eslint.org/docs/rules/no-empty
     'no-empty-character-class': 'error', // https://eslint.org/docs/rules/no-empty-character-class
-    'no-empty-function': ['error', { allow: ['arrowFunctions', 'functions']}], // https://eslint.org/docs/rules/no-empty-function
+    'no-empty-function': ['error', { allow: ['arrowFunctions', 'functions'] }], // https://eslint.org/docs/rules/no-empty-function
     'no-empty-pattern': 'error', // https://eslint.org/docs/rules/no-empty-pattern
     'no-eq-null': 'error', // https://eslint.org/docs/rules/no-eq-null
     'no-eval': 'error', // https://eslint.org/docs/rules/no-eval
@@ -461,7 +461,7 @@ module.exports = {
     'one-var': ['error', 'never'], // https://eslint.org/docs/rules/one-var
     'one-var-declaration-per-line': 'off', // https://eslint.org/docs/rules/one-var-declaration-per-line
     'operator-assignment': ['warn', 'always'], // https://eslint.org/docs/rules/operator-assignment
-    'operator-linebreak': ['error', 'before', { 'overrides': { '?': 'after' }}], // https://eslint.org/docs/rules/operator-linebreak
+    'operator-linebreak': ['error', 'before', { 'overrides': { '?': 'after' } }], // https://eslint.org/docs/rules/operator-linebreak
     'optimize-regex/optimize-regex': 'warn', // https://github.com/BrainMaestro/eslint-plugin-optimize-regex/blob/master/README.md
     'padded-blocks': ['error', 'never'], // https://eslint.org/docs/rules/padded-blocks
     // * this needs a lot of investigation for the different options
@@ -523,7 +523,7 @@ module.exports = {
         words: true,
       },
     ], // https://eslint.org/docs/rules/space-unary-ops
-    'spaced-comment': ['error', 'always', { exceptions: ['-', '+']}], // https://eslint.org/docs/rules/spaced-comment
+    'spaced-comment': ['error', 'always', { exceptions: ['-', '+'] }], // https://eslint.org/docs/rules/spaced-comment
     'strict': 'error', // https://eslint.org/docs/rules/strict
     'switch-colon-spacing': [
       'error',
