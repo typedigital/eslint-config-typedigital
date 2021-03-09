@@ -1,0 +1,1 @@
+export default dummyNumber = 0;
