@@ -13,6 +13,15 @@ module.exports = {
       version: 'detect',
     },
   },
+  overrides: [
+    {
+        files: "*.ts{,x}",
+        // * turned off when using TypeScript so this rule doesn't interfere when you check props with TS itself
+        rules: {
+            "react/prop-types": "off",
+        },
+    },
+  ],
   rules: {
     /* eslint-enable sort-keys */
     'class-methods-use-this': [
