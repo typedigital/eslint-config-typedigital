@@ -1,0 +1,12 @@
+{
+  "extends": [
+      "../../base.js",
+      "../../typescript.js",
+      "../../styled-components.js"
+  ],
+  "root": true,
+  "parserOptions": {
+      "project": "./tests/styled-components/tsconfig.json",
+      "sourceType": "module"
+  }
+}
