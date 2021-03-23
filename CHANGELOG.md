@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/typedigital/eslint-config-typedigital/compare/v4.1.1...v5.0.0) (2021-03-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* add typescript support (#50)
+
+### Features
+
+* add styled-components config ([#55](https://github.com/typedigital/eslint-config-typedigital/issues/55)) ([aea10a5](https://github.com/typedigital/eslint-config-typedigital/commit/aea10a5a618671d8cd3b96e283fb0b9921743b51)), closes [#44](https://github.com/typedigital/eslint-config-typedigital/issues/44) [#28](https://github.com/typedigital/eslint-config-typedigital/issues/28)
+* add typescript support ([#50](https://github.com/typedigital/eslint-config-typedigital/issues/50)) ([56eaee3](https://github.com/typedigital/eslint-config-typedigital/commit/56eaee3518c95bd88e413edcdb0cf4efae5900cd))
+
+
+### Bug Fixes
+
+* prop-type warnings when using ts ([#56](https://github.com/typedigital/eslint-config-typedigital/issues/56)) ([8c7fcba](https://github.com/typedigital/eslint-config-typedigital/commit/8c7fcba81448600f8a2a8b9279bc7f28aedde3d1))
+* unconsistent bracket spacing ([#47](https://github.com/typedigital/eslint-config-typedigital/issues/47)) ([da0c0cc](https://github.com/typedigital/eslint-config-typedigital/commit/da0c0cc6e0dc9f278770a94442bcf3374eb3ef96)), closes [#35](https://github.com/typedigital/eslint-config-typedigital/issues/35)
+
 ### [4.1.1](https://github.com/typedigital/eslint-config-typedigital/compare/v4.1.0...v4.1.1) (2020-11-04)
 
 
