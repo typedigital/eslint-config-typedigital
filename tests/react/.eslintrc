@@ -1,0 +1,17 @@
+{
+  "extends": [
+      "../../base.js",
+      "../../react.js"
+  ],
+  "root": true,
+  "parserOptions": {
+      "sourceType": "module",
+      "requireConfig": true,
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "babelOptions": {
+        "configFile": "./tests/react/babel.config.js"
+      }
+  }
+}
