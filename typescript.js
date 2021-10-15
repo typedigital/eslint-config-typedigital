@@ -361,6 +361,8 @@ module.exports = {
         'quotes': 'off', // covered by @typescript-eslint/quotes
         'semi': 'off', // covered by @typescript-eslint/semi
         'space-before-function-paren': 'off', // covered by @typescript-eslint/space-before-function-paren
+        'no-unused-vars': 'off', // covered by @typescript-eslint/no-unused-vars
+        'no-var': 'off', // covered by @typescript-esling/no-var
       },
     },
     {

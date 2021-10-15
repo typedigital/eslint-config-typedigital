@@ -18,3 +18,11 @@ function myFunc(): MyType | null {
 }
 
 myFunc();
+
+const myGlobalConst: MyGlobalType = {
+  name: 'foobar',
+  id: 'foo',
+  type: 'bar',
+};
+
+console.log(myGlobalConst);
