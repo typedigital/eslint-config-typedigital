@@ -73,6 +73,10 @@ To use our TypeScript configuration you just need to add the following to your `
         "@typedigital/eslint-config",
         "@typedigital/eslint-config/typescript",
     ],
+    "parserOptions": {
+      "project": ["./tsconfig.json"]
+    },
+    "parser": "@typescript-eslint/parser",
     "root": true
 }
 ```
