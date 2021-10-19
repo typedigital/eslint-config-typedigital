@@ -7,8 +7,5 @@
   "parserOptions": {
       "project": "./tests/typescript/tsconfig.json",
       "sourceType": "module"
-  },
-  "globals": {
-    "MyGlobalType": "readonly"
   }
 }
