@@ -32,6 +32,7 @@
     "test:base": "eslint ./tests/base/*.js --max-warnings 0 --config=base.js",
     "test:typescript": "eslint tests/typescript/*.ts --max-warnings 0 --config=tests/typescript/.eslintrc",
     "test:styled-components": "eslint tests/styled-components/*.ts --max-warnings 0 --config=tests/styled-components/.eslintrc",
+    "test:react": "eslint tests/react/*.jsx --max-warnings 0 --config=tests/react/.eslintrc",
     "release": "standard-version",
     "find-unused": "eslint-find-rules -u -n -d ./base.js",
     "find-unused:ts": "eslint-find-rules -u -n -d ./tests/typescript/.eslintrc"
@@ -55,6 +56,9 @@
     "eslint-plugin-react-native": "^3.10.0"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.14.5",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
     "@types/styled-components": "^5.1.8",
     "eslint": "^7.20.0",
     "eslint-find-rules": "^3.6.1",
