@@ -7,25 +7,23 @@ module.exports = {
   },
   plugins: [
     'import',
-    '@typescript-eslint'
+    '@typescript-eslint',
   ],
   overrides: [
     {
-        files: "**/*components.ts{,x}",
-        rules: {
-            '@typescript-eslint/no-magic-numbers': 'off'
-        },
+      files: '**/*components.ts{,x}',
+      rules: {
+        '@typescript-eslint/no-magic-numbers': 'off',
+      },
     },
-  ],
-  overrides: [
     {
-        files: "**/*components.js{,x}",
-        rules: {
-          'no-magic-numbers': 'off',
-        },
+      files: '**/*components.js{,x}',
+      rules: {
+        'no-magic-numbers': 'off',
+      },
     },
   ],
   rules: {
     'import/group-exports': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/group-exports.md
-  }
+  },
 };

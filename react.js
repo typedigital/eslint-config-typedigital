@@ -24,6 +24,7 @@ module.exports = {
   ],
   rules: {
     /* eslint-enable sort-keys */
+    'arrow-body-style': 'off', // https://eslint.org/docs/rules/arrow-body-style
     'class-methods-use-this': [
       'warn',
       {
@@ -35,7 +36,6 @@ module.exports = {
         ],
       },
     ], // https://eslint.org/docs/rules/class-methods-use-this
-    'arrow-body-style': 'off', // https://eslint.org/docs/rules/arrow-body-style
     'react-hooks/exhaustive-deps': 'warn', // https://reactjs.org/docs/hooks-rules.html
     'react-hooks/rules-of-hooks': 'error', // https://reactjs.org/docs/hooks-rules.html
     'react/boolean-prop-naming': 'warn', // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md
