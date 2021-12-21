@@ -361,9 +361,8 @@ module.exports = {
         'quotes': 'off', // covered by @typescript-eslint/quotes
         'semi': 'off', // covered by @typescript-eslint/semi
         'space-before-function-paren': 'off', // covered by @typescript-eslint/space-before-function-paren
-        'no-undef': 'off', // off because variables in d.ts files will be shown as error otherwise
+        'no-undef': 'off', // off because typescript handles it on its own
         'no-unused-vars': 'off', // covered by @typescript-eslint/no-unused-vars
-        'no-var': 'off', // covered by @typescript-eslint/no-var
       },
     },
     {
@@ -375,6 +374,7 @@ module.exports = {
         // be necessary to import the module so that TypeScript finds the typings that should be extended.
         // This is a better alternative to the triple-slash directive
         'import/no-unassigned-import': 'off',
+        'no-var': 'off',
       },
     },
     {
