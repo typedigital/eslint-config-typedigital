@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.0.1](https://github.com/typedigital/eslint-config-typedigital/compare/v5.0.0...v5.0.1) (2022-01-20)
+
+
+### Bug Fixes
+
+* console error in various.ts test ([240d6bb](https://github.com/typedigital/eslint-config-typedigital/commit/240d6bb978c3a6eb974656e6231291fbad585056))
+* linting errors in rule files ([b12ba32](https://github.com/typedigital/eslint-config-typedigital/commit/b12ba32bc3bc618a3853aea9b419421afc0803cc))
+* no-undef and no-var rule ([#65](https://github.com/typedigital/eslint-config-typedigital/issues/65)) ([becabf1](https://github.com/typedigital/eslint-config-typedigital/commit/becabf13a893d9a78653f17716f0b77d725fd286))
+* style fix in react test-component ([86ed3e9](https://github.com/typedigital/eslint-config-typedigital/commit/86ed3e9d2a15399176ec86d3399b9097395667b0))
+
 ## [5.0.0](https://github.com/typedigital/eslint-config-typedigital/compare/v4.1.1...v5.0.0) (2021-03-23)
 
 
