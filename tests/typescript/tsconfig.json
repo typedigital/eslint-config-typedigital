@@ -5,6 +5,7 @@
       "lib": ["esnext", "DOM"],
       "strict": true,
       "moduleResolution": "node",
-      "esModuleInterop": true
+      "esModuleInterop": true,
+      "typeRoots": ["../typescript", "../../node_modules/@types"]
   }
 }
