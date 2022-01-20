@@ -25,4 +25,5 @@ const myGlobalConst: MyGlobalType = {
   type: 'bar',
 };
 
+// eslint-disable-next-line no-console
 console.log(myGlobalConst);
