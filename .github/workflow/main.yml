@@ -26,4 +26,4 @@ jobs:
       - name: Update version and release it to NPM
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: touch .npmrc && echo "$NPM_TOKEN" >> .npmrc && npm realease && git push --follow-tags origin main && npm publish
+        run: npm realease && git push --follow-tags origin main && npm publish
