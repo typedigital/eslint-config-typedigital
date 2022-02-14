@@ -26,4 +26,7 @@ jobs:
       - name: Update version and release it to NPM
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm realease && git push --follow-tags origin main && npm publish
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          npm realease && git push --follow-tags origin main && npm publish
