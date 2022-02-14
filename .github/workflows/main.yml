@@ -27,4 +27,4 @@ jobs:
           git config --global user.name 'GitHub Action Release [bot]'
           git config --global user.email 'actions@github.com'
           npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-          npm run release && git push --follow-tags origin main && npm publish
+          npm run release && git push --force --follow-tags origin main && npm publish
