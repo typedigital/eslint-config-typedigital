@@ -179,7 +179,15 @@ module.exports = {
           },
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-explicit-any.md
         '@typescript-eslint/no-extra-non-null-assertion': ['warn'], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-non-null-assertion.md
-        '@typescript-eslint/no-extra-parens': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
+        '@typescript-eslint/no-extra-parens': [
+          'off', 'all', { // exceptions come here:
+            'enforceForArrowConditionals': false,
+            'enforceForNewInMemberExpressions': false,
+            'ignoreJSX': 'all',
+            'nestedBinaryExpressions': false,
+            'returnAssign': false,
+          },
+        ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
         '@typescript-eslint/no-extraneous-class': 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extraneous-class.md
         '@typescript-eslint/no-floating-promises': [
           'warn',
