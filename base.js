@@ -21,6 +21,7 @@ module.exports = {
     'optimize-regex',
     'no-unsafe-regex',
     'node',
+    "unicorn",
   ],
   extends: [
     'eslint:recommended',
@@ -536,6 +537,7 @@ module.exports = {
     'template-curly-spacing': ['error', 'never'], // https://eslint.org/docs/rules/template-curly-spacing
     'template-tag-spacing': ['error', 'never'], // https://eslint.org/docs/rules/template-tag-spacing
     'unicode-bom': ['error', 'never'], // https://eslint.org/docs/rules/unicode-bom
+    'unicorn/filename-case' : ['error'], //https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
     'use-isnan': 'error', // https://eslint.org/docs/rules/use-isnan
     'valid-jsdoc': [
       'error',
