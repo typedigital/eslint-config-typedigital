@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 6.0.0 (2022-03-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* added rule for kebab case (#75)
+
+### Features
+
+* added rule for kebab case ([#75](https://github.com/typedigital/eslint-config-typedigital/issues/75)) ([d2b7adb](https://github.com/typedigital/eslint-config-typedigital/commit/d2b7adb5754f8507b0a3afc8a180537de890295f))
+
 ### 5.0.3 (2022-03-04)
 
 
