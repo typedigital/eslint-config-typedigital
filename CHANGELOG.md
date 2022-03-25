@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 6.0.1 (2022-03-25)
+
+
+### Bug Fixes
+
+* add missing unicorn plugin to dependencies ([#79](https://github.com/typedigital/eslint-config-typedigital/issues/79)) ([17f149f](https://github.com/typedigital/eslint-config-typedigital/commit/17f149f0290defce77bcdd4245a710d418ea9e78))
+
 ## 6.0.0 (2022-03-19)
 
 
