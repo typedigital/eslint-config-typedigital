@@ -276,13 +276,6 @@ module.exports = {
         '@typescript-eslint/prefer-interface': 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-interface.md
         '@typescript-eslint/prefer-literal-enum-member': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-literal-enum-member.md
         '@typescript-eslint/prefer-namespace-keyword': 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-namespace-keyword.md
-        '@typescript-eslint/prefer-nullish-coalescing': [
-          'warn',
-          {
-            ignoreConditionalTests: true,
-            ignoreMixedLogicalExpressions: true,
-          },
-        ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md
         '@typescript-eslint/prefer-optional-chain': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
         '@typescript-eslint/prefer-readonly': 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly.md
         '@typescript-eslint/prefer-readonly-parameter-types': 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly-parameter-types.md
