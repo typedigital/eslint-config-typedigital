@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0-beta.0](https://github.com/typedigital/eslint-config-typedigital/compare/v6.0.2...v7.0.0-beta.0) (2022-04-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* support for ESLint v8.0.0
+
+### Features
+
+* support for ESLint v8.0.0 ([aca35dd](https://github.com/typedigital/eslint-config-typedigital/commit/aca35dd82fcd23faee017be3e4a33ec4c3776e3c))
+
 ### 6.0.2 (2022-03-25)
 
 ### 6.0.1 (2022-03-25)
