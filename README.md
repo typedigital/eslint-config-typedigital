@@ -9,6 +9,11 @@
 ```shell
 npm i @typedigital/eslint-config --save-dev
 ```
+
+### ESLint 8 support
+
+Since version `7.0.0` we updated our used plugins and are supporting ESLint 8. Note that the peer-dependency `eslint` has to be greater or equal v8.0.0.
+
 ## Configurations
 
 ### @typedigital - the base config
@@ -23,6 +28,7 @@ To use our eslint coding guidelines add an `.eslintrc` to the project's root dir
         "@typedigital/eslint-config"
     ],
     "env": {
+        // add the environment you use - refer to https://eslint.org/docs/user-guide/configuring/language-options#using-configuration-files
         "node": true
     },
     // ignore configs in other directories
