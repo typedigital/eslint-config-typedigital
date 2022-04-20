@@ -214,7 +214,7 @@ module.exports = {
         '@typescript-eslint/no-magic-numbers': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
         '@typescript-eslint/no-misused-new': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-new.md
         '@typescript-eslint/no-misused-promises': [
-          'error',
+          'warn',
           {
             'checksVoidReturn': false
           }
