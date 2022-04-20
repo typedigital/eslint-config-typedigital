@@ -1,9 +1,15 @@
 import React from 'react';
 
+const MyTitle = () => {
+  return (
+    <h1>Unparameterized Title</h1>
+  );
+};
+
 const MyComponent = () => {
   return (
     <div>
-      <h1>My Component</h1>
+      <MyTitle />
     </div>
   );
 };
