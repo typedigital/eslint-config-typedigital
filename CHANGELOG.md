@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 6.0.3 (2022-04-20)
+
+
+### Bug Fixes
+
+* deleted prefer-nullish-coalescing ([#83](https://github.com/typedigital/eslint-config-typedigital/issues/83)) ([6e5db64](https://github.com/typedigital/eslint-config-typedigital/commit/6e5db64221cc7cc1b0e92b5ed88624dc7f28f15f))
+
 ### 6.0.2 (2022-03-25)
 
 ### 6.0.1 (2022-03-25)
