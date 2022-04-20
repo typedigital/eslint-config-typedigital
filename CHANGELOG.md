@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 6.1.0 (2022-04-20)
+
+
+### Features
+
+* turn off no-multi-comp to support colocation ([#89](https://github.com/typedigital/eslint-config-typedigital/issues/89)) ([e38f38b](https://github.com/typedigital/eslint-config-typedigital/commit/e38f38baa5e2bce7576fe7a63cc265a931f0cf49))
+
 ### 6.0.4 (2022-04-20)
 
 
