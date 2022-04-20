@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 6.0.4 (2022-04-20)
+
+
+### Bug Fixes
+
+* disabled  no-misused-promises at void returns ([#86](https://github.com/typedigital/eslint-config-typedigital/issues/86)) ([61c6421](https://github.com/typedigital/eslint-config-typedigital/commit/61c642187095ba0b43a80192b1d25ba097326dc3))
+
 ### 6.0.3 (2022-04-20)
 
 
