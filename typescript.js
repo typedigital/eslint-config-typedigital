@@ -213,7 +213,12 @@ module.exports = {
         '@typescript-eslint/no-loss-of-precision': ['warn'], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loss-of-precision.md
         '@typescript-eslint/no-magic-numbers': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
         '@typescript-eslint/no-misused-new': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-new.md
-        '@typescript-eslint/no-misused-promises': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-promises.md
+        '@typescript-eslint/no-misused-promises': [
+          'warn',
+          {
+            'checksVoidReturn': false
+          }
+        ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-promises.md
         '@typescript-eslint/no-namespace': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-namespace.md
         '@typescript-eslint/no-non-null-asserted-optional-chain':
               'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-optional-chain.md
