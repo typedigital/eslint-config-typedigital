@@ -213,7 +213,12 @@ module.exports = {
         '@typescript-eslint/no-loss-of-precision': ['warn'], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loss-of-precision.md
         '@typescript-eslint/no-magic-numbers': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-magic-numbers.md
         '@typescript-eslint/no-misused-new': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-new.md
-        '@typescript-eslint/no-misused-promises': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-promises.md
+        '@typescript-eslint/no-misused-promises': [
+          'warn',
+          {
+            'checksVoidReturn': false
+          }
+        ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-promises.md
         '@typescript-eslint/no-namespace': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-namespace.md
         '@typescript-eslint/no-non-null-asserted-optional-chain':
               'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-optional-chain.md
@@ -276,13 +281,6 @@ module.exports = {
         '@typescript-eslint/prefer-interface': 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-interface.md
         '@typescript-eslint/prefer-literal-enum-member': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-literal-enum-member.md
         '@typescript-eslint/prefer-namespace-keyword': 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-namespace-keyword.md
-        '@typescript-eslint/prefer-nullish-coalescing': [
-          'warn',
-          {
-            ignoreConditionalTests: true,
-            ignoreMixedLogicalExpressions: true,
-          },
-        ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md
         '@typescript-eslint/prefer-optional-chain': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
         '@typescript-eslint/prefer-readonly': 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly.md
         '@typescript-eslint/prefer-readonly-parameter-types': 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly-parameter-types.md
