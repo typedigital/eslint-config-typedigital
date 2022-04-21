@@ -302,7 +302,7 @@ module.exports = {
     'no-lonely-if': 'warn', // https://eslint.org/docs/rules/no-lonely-if
     'no-loop-func': 'error', // https://eslint.org/docs/rules/no-loop-func
     'no-magic-numbers': [
-      'warn',
+      'off',
       {
         ignore: [
           // allow digits
