@@ -1,6 +1,6 @@
 {
   "name": "@typedigital/eslint-config",
-  "version": "6.2.3",
+  "version": "6.2.4",
   "description": "typedigital JavaScript style guide",
   "main": "base.js",
   "repository": {
