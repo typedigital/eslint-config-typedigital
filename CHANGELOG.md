@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 6.2.0 (2022-04-21)
+
+
+### Features
+
+* deleted prefer-await-to-then ([#85](https://github.com/typedigital/eslint-config-typedigital/issues/85)) ([54f0324](https://github.com/typedigital/eslint-config-typedigital/commit/54f032479b09b2d34992ce00c4a18e2a6b3f33ff))
+
 ## 6.1.0 (2022-04-20)
 
 
