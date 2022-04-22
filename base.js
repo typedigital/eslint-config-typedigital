@@ -303,7 +303,7 @@ module.exports = {
     'no-loop-func': 'error', // https://eslint.org/docs/rules/no-loop-func
     'no-loss-of-precision': 'warn', // https://eslint.org/docs/rules/no-loss-of-precision
     'no-magic-numbers': [
-      'warn',
+      'off',
       {
         ignore: [
           // allow digits
@@ -488,10 +488,9 @@ module.exports = {
     'promise/no-return-in-finally': 'warn', // https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/no-return-in-finally.md
     'promise/no-return-wrap': 'error', // https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/no-return-wrap.md
     'promise/param-names': 'error', // https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/param-names.md
-    // * it's better to use one syntax so the await syntax should be our standard
+    // * it's better to use one syntax so the await syntax should be our standard and in some cases the `then` syntax can be used
     'promise/prefer-await-to-callbacks': 'warn', // https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/prefer-await-to-callbacks.md
-    // * it's better to use one syntax so the await syntax should be our standard
-    'promise/prefer-await-to-then': 'warn', // https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/prefer-await-to-then.md
+    'promise/prefer-await-to-then': 'off', // https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/prefer-await-to-then.md
     'promise/valid-params': 'error', // https://github.com/xjamundx/eslint-plugin-promise/blob/master/docs/rules/valid-params.md
     'quote-props': ['error', 'consistent-as-needed'], // https://eslint.org/docs/rules/quote-props
     'quotes': ['error', 'single', { allowTemplateLiterals: true }], // handled by @babel/quotes

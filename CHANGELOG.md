@@ -12,6 +12,30 @@ All notable changes to this project will be documented in this file. See [standa
 ### Features
 
 * support for ESLint v8.0.0 ([aca35dd](https://github.com/typedigital/eslint-config-typedigital/commit/aca35dd82fcd23faee017be3e4a33ec4c3776e3c))
+## 6.3.0 (2022-04-21)
+
+
+### Features
+
+* turn off rule 'no-magic-numbers' ([9855bf7](https://github.com/typedigital/eslint-config-typedigital/commit/9855bf77b35e2bd8ca54434200399373d51a1c98))
+
+### 6.2.5 (2022-04-21)
+
+### 6.2.4 (2022-04-21)
+
+### 6.2.3 (2022-04-21)
+
+### 6.2.2 (2022-04-21)
+
+### 6.2.1 (2022-04-21)
+
+## 6.2.0 (2022-04-21)
+
+
+### Features
+
+* deleted prefer-await-to-then ([#85](https://github.com/typedigital/eslint-config-typedigital/issues/85)) ([54f0324](https://github.com/typedigital/eslint-config-typedigital/commit/54f032479b09b2d34992ce00c4a18e2a6b3f33ff))
+
 ## 6.1.0 (2022-04-20)
 
 
