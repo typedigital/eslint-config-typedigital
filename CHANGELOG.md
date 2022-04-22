@@ -19,15 +19,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 * turn off rule 'no-magic-numbers' ([9855bf7](https://github.com/typedigital/eslint-config-typedigital/commit/9855bf77b35e2bd8ca54434200399373d51a1c98))
 
-### 6.2.5 (2022-04-21)
+### 6.2.1 (2022-04-21) to 6.2.5 (2022-04-21)
 
-### 6.2.4 (2022-04-21)
-
-### 6.2.3 (2022-04-21)
-
-### 6.2.2 (2022-04-21)
-
-### 6.2.1 (2022-04-21)
+> :bug: These releases were triggered by a bug in our continuous integration pipeline. They do not contain any changes to our eslint configurations.
 
 ## 6.2.0 (2022-04-21)
 
