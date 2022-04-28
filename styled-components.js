@@ -13,13 +13,13 @@ module.exports = {
     {
       files: '**/*components.ts{,x}',
       rules: {
-        '@typescript-eslint/no-magic-numbers': 'off',
+        '@typescript-eslint/no-magic-numbers': 'off', // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-magic-numbers.md
       },
     },
     {
       files: '**/*components.js{,x}',
       rules: {
-        'no-magic-numbers': 'off',
+        'no-magic-numbers': 'off', // https://github.com/eslint/eslint/blob/9ecd42f36462331a0d697e74323a4d24f0cf02fc/docs/src/rules/no-magic-numbers.md
       },
     },
   ],
