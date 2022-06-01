@@ -178,7 +178,7 @@ module.exports = {
     'import/no-useless-path-segments': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
     'import/no-webpack-loader-syntax': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
     'import/order': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
-    'import/prefer-default-export': 'warn', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
+    'import/prefer-default-export': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
     'import/unambiguous': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/unambiguous.md
     'indent': ['error', 2], // http://eslint.org/docs/rules/indent
     'init-declarations': 'off', // http://eslint.org/docs/rules/init-declarations
