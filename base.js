@@ -178,7 +178,7 @@ module.exports = {
     'import/no-useless-path-segments': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md
     'import/no-webpack-loader-syntax': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
     'import/order': 'error', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
-    // * warns you about default exports where not defaulting exporting is an explicit design choice
+    // * We turned this rule off, as it warns you about default exports where not default exporting is an explicit design choice
     'import/prefer-default-export': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
     'import/unambiguous': 'off', // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/unambiguous.md
     'indent': ['error', 2], // http://eslint.org/docs/rules/indent
