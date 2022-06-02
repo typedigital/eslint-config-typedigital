@@ -1,6 +1,6 @@
 {
   "name": "@typedigital/eslint-config",
-  "version": "6.4.0",
+  "version": "7.0.0-beta.0",
   "description": "typedigital JavaScript style guide",
   "main": "base.js",
   "repository": {
@@ -38,38 +38,38 @@
     "find-unused:ts": "eslint-find-rules -u -n -d ./tests/typescript/.eslintrc"
   },
   "dependencies": {
-    "@babel/core": "^7.12.17",
-    "@babel/eslint-parser": "^7.12.17",
-    "@babel/eslint-plugin": ">=7.12.1",
-    "@typescript-eslint/eslint-plugin": "^4.15.1",
-    "@typescript-eslint/parser": "^4.15.1",
+    "@babel/core": "^7.17.9",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/eslint-plugin": ">=7.17.7",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
     "eslint-plugin-array-func": "^3.1.7",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^32.1.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.2.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-no-unsafe-regex": "^1.0.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-optimize-regex": "^1.2.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-react-native": "^3.10.0",
-    "eslint-plugin-unicorn": "41.0.0"
+    "eslint-plugin-optimize-regex": "^1.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "eslint-plugin-unicorn": "42.0.0"
   },
   "devDependencies": {
-    "@babel/plugin-syntax-jsx": "^7.14.5",
-    "@babel/preset-env": "^7.15.8",
-    "@babel/preset-react": "^7.14.5",
-    "@types/styled-components": "^5.1.8",
-    "eslint": "^7.32.0",
-    "eslint-find-rules": "^3.6.1",
+    "@babel/plugin-syntax-jsx": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@types/styled-components": "^5.1.25",
+    "eslint": "^8.13.0",
+    "eslint-find-rules": "^4.1.0",
     "npm-run-all": "^4.1.5",
-    "react": "^17.0.1",
-    "standard-version": "^9.1.1",
-    "styled-components": "^5.2.1",
-    "typescript": "^4.1.5"
+    "react": "^18.0.0",
+    "standard-version": "^9.3.2",
+    "styled-components": "^5.3.5",
+    "typescript": "^4.6.3"
   },
   "peerDependencies": {
-    "eslint": ">=7.12.0"
+    "eslint": ">=8.0.0"
   }
 }

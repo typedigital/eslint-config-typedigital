@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0-beta.0](https://github.com/typedigital/eslint-config-typedigital/compare/v6.0.2...v7.0.0-beta.0) (2022-04-16)
+
+
+### ⚠ BREAKING CHANGES
 ## 6.4.0 (2022-06-02)
 
 
@@ -11,20 +15,21 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## 6.3.0 (2022-04-21)
 
+* support for ESLint v8.0.0
+
+### Features
+
+* support for ESLint v8.0.0 ([aca35dd](https://github.com/typedigital/eslint-config-typedigital/commit/aca35dd82fcd23faee017be3e4a33ec4c3776e3c))
+## 6.3.0 (2022-04-21)
+
 
 ### Features
 
 * turn off rule 'no-magic-numbers' ([9855bf7](https://github.com/typedigital/eslint-config-typedigital/commit/9855bf77b35e2bd8ca54434200399373d51a1c98))
 
-### 6.2.5 (2022-04-21)
+### 6.2.1 (2022-04-21) to 6.2.5 (2022-04-21)
 
-### 6.2.4 (2022-04-21)
-
-### 6.2.3 (2022-04-21)
-
-### 6.2.2 (2022-04-21)
-
-### 6.2.1 (2022-04-21)
+> :bug: These releases were triggered by a bug in our continuous integration pipeline. They do not contain any changes to our eslint configurations.
 
 ## 6.2.0 (2022-04-21)
 
