@@ -302,6 +302,7 @@ module.exports = {
     'no-lone-blocks': 'error', // https://eslint.org/docs/rules/no-lone-blocks
     'no-lonely-if': 'warn', // https://eslint.org/docs/rules/no-lonely-if
     'no-loop-func': 'error', // https://eslint.org/docs/rules/no-loop-func
+    'no-loss-of-precision' : 'warn', //https://eslint.org/docs/rules/no-loss-of-precision
     'no-magic-numbers': [
       'off',
       {
