@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 6.4.0 (2022-06-02)
+
+
+### Features
+
+* switched off prefer-default-export ([#92](https://github.com/typedigital/eslint-config-typedigital/issues/92)) ([c75bf93](https://github.com/typedigital/eslint-config-typedigital/commit/c75bf934049942b22a1f11ecba81963663760212))
+
 ## 6.3.0 (2022-04-21)
 
 
