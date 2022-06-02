@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 7.0.0 (2022-06-02)
+
+
+### Features
+
+* added no-loss-of-precision-rule ([#94](https://github.com/typedigital/eslint-config-typedigital/issues/94)) ([04f972c](https://github.com/typedigital/eslint-config-typedigital/commit/04f972c3944a692c621fd0e5fba8fb2c71764c20))
+
 ## [7.0.0-beta.0](https://github.com/typedigital/eslint-config-typedigital/compare/v6.0.2...v7.0.0-beta.0) (2022-04-16)
 
 
