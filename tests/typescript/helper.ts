@@ -1,3 +1,3 @@
-export default function helper(): boolean {
-  return true;
+export default function helper() {
+  return !!true;
 }
