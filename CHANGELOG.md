@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 7.1.0 (2023-02-22)
+
+
+### Features
+
+* add tsdoc validation for ts files ([#104](https://github.com/typedigital/eslint-config-typedigital/issues/104)) ([89ef1b8](https://github.com/typedigital/eslint-config-typedigital/commit/89ef1b81a15b811b2118fcf714ae2b60dd9fb94a))
+
 ## 7.0.0 (2022-06-02)
 
 
