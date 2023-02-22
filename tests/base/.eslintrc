@@ -1,0 +1,13 @@
+{
+  "extends": [
+      "../../base.js",
+  ],
+  "root": true,
+  "parserOptions": {
+      "sourceType": "module",
+      "requireConfig": true,
+      "babelOptions": {
+        "configFile": "./tests/react/babel.config.js"
+      }
+  }
+}

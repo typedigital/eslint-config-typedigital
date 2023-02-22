@@ -30,7 +30,7 @@
     "lint-fix": "eslint ./*.js --config=base.js --fix",
     "test": "npm-run-all test:*",
     "test:typescript": "vitest run ./tests/typescript",
-    "test:base": "eslint ./tests/base/*.js --max-warnings 0 --config=base.js",
+    "test:base": "vitest run ./tests/base",
     "test:styled-components": "eslint tests/styled-components/*.ts --max-warnings 0 --config=tests/styled-components/.eslintrc",
     "test:react": "eslint tests/react/*.jsx --max-warnings 0 --config=tests/react/.eslintrc",
     "release": "standard-version",
