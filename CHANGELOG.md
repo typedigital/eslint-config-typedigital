@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 7.2.0 (2023-02-22)
+
+
+### Features
+
+* enable warnings for non null assertion and add test framework ([#107](https://github.com/typedigital/eslint-config-typedigital/issues/107)) ([a837afe](https://github.com/typedigital/eslint-config-typedigital/commit/a837afe10d826857fbe0da5c0047b15dd18dc7dc))
+
 ## 7.1.0 (2023-02-22)
 
 
