@@ -2,7 +2,7 @@
 /* eslint-disable sort-keys */
 
 module.exports = {
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'eslint-plugin-tsdoc'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
@@ -216,8 +216,8 @@ module.exports = {
         '@typescript-eslint/no-misused-promises': [
           'warn',
           {
-            'checksVoidReturn': false
-          }
+            'checksVoidReturn': false,
+          },
         ], // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-promises.md
         '@typescript-eslint/no-namespace': 'warn', // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-namespace.md
         '@typescript-eslint/no-non-null-asserted-optional-chain':
@@ -369,6 +369,8 @@ module.exports = {
         'quotes': 'off', // covered by @typescript-eslint/quotes
         'semi': 'off', // covered by @typescript-eslint/semi
         'space-before-function-paren': 'off', // covered by @typescript-eslint/space-before-function-paren
+        'tsdoc/syntax': 'warn',
+        'valid-jsdoc': 'off', // covered by tsdoc/syntax
       },
     },
     {
