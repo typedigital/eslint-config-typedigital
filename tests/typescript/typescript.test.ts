@@ -41,4 +41,15 @@ describe('typescript config', () => {
     expect(result.errorCount).toBe(1);
     expect(result.messages.some((message) => message.ruleId === '@typescript-eslint/no-non-null-assertion')).toBe(true);
   });
+
+  it('should allow spreading of array elements', async () => {
+    // arrange
+    const linter = new ESLint();
+    const fileName = 'tests/typescript/array-spread.ts';
+
+    // act
+    const [result] = await linter.lintFiles([fileName]);
+
+    expect(result.warningCount).toBe(1);
+  });
 });
