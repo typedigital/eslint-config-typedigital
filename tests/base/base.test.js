@@ -10,6 +10,7 @@ describe('base config', () => {
     // act
     const [result] = await linter.lintFiles([fileName]);
 
-    expect(result.errorCount).toBe(0);
+    // assert
+    expect(result.warningCount).toBe(0);
   });
 });
