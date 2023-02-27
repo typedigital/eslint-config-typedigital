@@ -12,5 +12,6 @@ describe('base config', () => {
 
     // assert
     expect(result.warningCount).toBe(0);
+    expect(result.messages.some((message) => message.ruleId === 'array-func/prefer-array-from')).toBe(false);
   });
 });
