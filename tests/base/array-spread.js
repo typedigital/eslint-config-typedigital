@@ -1,5 +1,7 @@
 const fruits = ['apple', 'banana'];
 
-const eadibles = [...fruits, 'tomato'];
+const eadibles = [...fruits];
 
-console.log(eadibles);
+const envoke = () => eadibles;
+
+envoke();
