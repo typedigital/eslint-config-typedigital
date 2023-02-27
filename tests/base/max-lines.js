@@ -317,7 +317,64 @@ output4 += `Average order value: ${averageOrderValue.toFixed(2)}`;
 
 const four = () => output4;
 
+const numRows = 10;
+const numCols = 10;
+
+// Generate multiplication table
+const table = [];
+for (let i = 1; i <= numRows; i++) {
+  const row = [];
+  for (let j = 1; j <= numCols; j++) {
+    row.push(i * j);
+  }
+  table.push(row);
+}
+
+// Generate formatted output with multiplication table
+let output5 = '';
+for (let i = 0; i <= numRows; i++) {
+  for (let j = 0; j <= numCols; j++) {
+    if (i === 0 && j === 0) {
+      output5 += '  ';
+    } else if (i === 0) {
+      output5 += `${j} `;
+    } else if (j === 0) {
+      output5 += `${i} `;
+    } else {
+      output5 += `${table[i - 1][j - 1]} `;
+    }
+  }
+  output5 += '\n';
+}
+
+const five = () => output5;
+
+const jokes = [
+  { setup: 'Why did the tomato turn red?', punchline: 'Because it saw the salad dressing!' },
+  { setup: 'Why don\'t scientists trust atoms?', punchline: 'Because they make up everything.' },
+  { setup: 'What do you call a fake noodle?', punchline: 'An impasta!' },
+  { setup: 'Why don\'t seagulls fly by the bay?', punchline: 'Because then they\'d be bagels!' },
+  { setup: 'What do you get when you cross a snowman and a shark?', punchline: 'Frostbite!' },
+];
+
+// Generate random joke
+const randomIndex = Math.floor(Math.random() * jokes.length);
+const joke = jokes[randomIndex];
+
+// Output joke to console
+const setup = () => `Setup: ${joke.setup}`;
+const punchline = () => {
+  setTimeout(() => `Punchline: ${joke.punchline}`, 2000);
+};
+
+const six = () => {
+  setup();
+  punchline();
+};
+
 one();
 two();
 three();
 four();
+five();
+six();

@@ -221,7 +221,7 @@ module.exports = {
     ], // https://eslint.org/docs/rules/max-len
     'max-lines': [
       'warn',
-      { max: 300, skipBlankLines: true, skipComments: true },
+      { max: 500, skipBlankLines: true, skipComments: true },
     ], // https://eslint.org/docs/rules/max-lines
     'max-nested-callbacks': ['warn', { max: 5 }], // https://eslint.org/docs/rules/max-nested-callbacks
     'max-params': ['warn', { max: 3 }], // https://eslint.org/docs/rules/max-params
