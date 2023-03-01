@@ -18,13 +18,17 @@ describe('base config', () => {
   it('should allow up to 500 lines in a js-file', async () => {
     // arrange
     const linter = new ESLint();
-    const fileName = 'tests/base/max-lines.js';
+    const correctFile = 'tests/base/right-lines.js';
+    const failingFile = 'tests/base/max-lines.js';
 
     // act
-    const [result] = await linter.lintFiles([fileName]);
+    const [correctResult] = await linter.lintFiles([correctFile]);
+    const [failingResult] = await linter.lintFiles([failingFile]);
 
     // assert
-    expect(result.warningCount).toBe(0);
-    expect(result.messages.some((message) => message.ruleId === 'max-lines')).toBe(false);
+    expect(correctResult.warningCount).toBe(0);
+    expect(correctResult.messages.some((message) => message.ruleId === 'max-lines')).toBe(false);
+    expect(failingResult.warningCount).toBe(1);
+    expect(failingResult.messages.some((message) => message.ruleId === 'max-lines')).toBe(true);
   });
 });

@@ -159,7 +159,7 @@ function getFriendNames(person) {
   person.friends.forEach((friend) => {
     friendNames += `${friend.name}, `;
   });
-  friendNames = friendNames.slice(0, -2);
+  friendNames = friendNames.slice(0, -2); // Remove the trailing comma and space
   return friendNames;
 }
 
@@ -222,7 +222,7 @@ products.forEach((product) => {
   productDescriptions += `${product.description}\n`;
 });
 
-productNames = productNames.slice(0, -2);
+productNames = productNames.slice(0, -2); // Remove the trailing comma and space
 
 const averagePrice = totalPrice / products.length;
 
@@ -236,7 +236,7 @@ ${productDescriptions}
 `;
 
 const three = () => output3;
-
+// Generate random dataset of users and purchase history
 const users = [];
 for (let i = 0; i < 100; i++) {
   const user = {
@@ -246,6 +246,7 @@ for (let i = 0; i < 100; i++) {
     purchases: [],
   };
 
+  // Generate random purchase history for each user
   const numPurchases = Math.floor(Math.random() * 10) + 1;
   for (let j = 0; j < numPurchases; j++) {
     const purchase = {
@@ -255,6 +256,7 @@ for (let i = 0; i < 100; i++) {
       items: [],
     };
 
+    // Generate random items for each purchase
     const numItems = Math.floor(Math.random() * 5) + 1;
     for (let k = 0; k < numItems; k++) {
       const item = {
@@ -271,6 +273,7 @@ for (let i = 0; i < 100; i++) {
   users.push(user);
 }
 
+// Calculate total revenue and average order value
 let totalRevenue = 0;
 let totalOrderValue = 0;
 let numOrders = 0;
@@ -286,6 +289,7 @@ users.forEach((user) => {
 
 const averageOrderValue = totalOrderValue / numOrders;
 
+// Generate formatted output with user information and purchase history
 let output4 = '';
 users.forEach((user) => {
   output4 += `User ID: ${user.id}\n`;
@@ -316,6 +320,7 @@ const four = () => output4;
 const numRows = 10;
 const numCols = 10;
 
+// Generate multiplication table
 const table = [];
 for (let i = 1; i <= numRows; i++) {
   const row = [];
@@ -325,6 +330,7 @@ for (let i = 1; i <= numRows; i++) {
   table.push(row);
 }
 
+// Generate formatted output with multiplication table
 let output5 = '';
 for (let i = 0; i <= numRows; i++) {
   for (let j = 0; j <= numCols; j++) {
@@ -352,9 +358,11 @@ const jokes = [
   { setup: 'What do you get when you cross a snowman and a shark?', punchline: 'Frostbite!' },
 ];
 
+// Generate random joke
 const randomIndex = Math.floor(Math.random() * jokes.length);
 const joke = jokes[randomIndex];
 
+// Output joke to console
 const setup = () => `Setup: ${joke.setup}`;
 const punchline = () => {
   setTimeout(() => `Punchline: ${joke.punchline}`, 2000);
@@ -365,233 +373,9 @@ const six = () => {
   punchline();
 };
 
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function createRandomArray(length, min, max) {
-  const array = [];
-  for (let i = 0; i < length; i++) {
-    array.push(getRandomInt(min, max));
-  }
-  return array;
-}
-
-function sumArray1(array) {
-  let sum1 = 0;
-  for (let i = 0; i < array.length; i++) {
-    sum1 += array[i];
-  }
-  return sum1;
-}
-
-function averageArray(array) {
-  if (array.length === 0) {
-    return null;
-  }
-  return sumArray1(array) / array.length;
-}
-
-class Person {
-  constructor(name, age1) {
-    this.name = name;
-    this.age = age1;
-  }
-
-  static generateRandomPerson() {
-    const names = ['Alice', 'Bob', 'Charlie', 'David', 'Emily', 'Frank', 'Gina', 'Henry', 'Isabelle', 'Jack'];
-    const name = names[getRandomInt(0, names.length - 1)];
-    const age1 = getRandomInt(18, 65);
-    return new Person(name, age1);
-  }
-}
-
-// Define a function to sort an array of objects by a given property
-function sortByProperty(array, property) {
-  array.sort((a, b) => {
-    if (a[property] < b[property]) {
-      return -1;
-    }
-    if (a[property] > b[property]) {
-      return 1;
-    }
-    return 0;
-  });
-}
-
-const people = createRandomArray(10, 0, 0).map(() => Person.generateRandomPerson());
-
-sortByProperty(people, 'age');
-
-const averageAge = averageArray(people.map((person) => person.age));
-
-function sorted() {
-  return (`Sorted list of people by age: ${JSON.stringify(people)}`);
-}
-function averageAges() {
-  return (`Average age of people: ${averageAge}`);
-}
-
-const seven = () => {
-  sorted();
-  averageAges();
-};
-
-function generateRandomString(length) {
-  const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-  let result = '';
-  for (let i = 0; i < length; i++) {
-    result += characters.charAt(Math.floor(Math.random() * characters.length));
-  }
-  return result;
-}
-
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-
-function factorial(n) {
-  if (n < 0) {
-    return null;
-  }
-  let result = 1;
-  for (let i = 2; i <= n; i++) {
-    result *= i;
-  }
-  return result;
-}
-
-function fibonacci(n) {
-  if (n < 0) {
-    return null;
-  }
-  if (n <= 1) {
-    return n;
-  }
-  let a = 0;
-  let b = 1;
-  for (let i = 2; i <= n; i++) {
-    const temp = b;
-    b = a + b;
-    a = temp;
-  }
-  return b;
-}
-class Deck {
-  constructor() {
-    this.cards = [];
-    const suits = ['clubs', 'diamonds', 'hearts', 'spades'];
-    const ranks = ['ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king'];
-    for (const suit of suits) {
-      for (const rank of ranks) {
-        this.cards.push({ suit, rank });
-      }
-    }
-  }
-
-  shuffle() {
-    shuffleArray(this.cards);
-  }
-
-  deal() {
-    return this.cards.pop();
-  }
-}
-
-const deck = new Deck();
-
-deck.shuffle();
-
-const topCard = deck.deal();
-
-const randomString = generateRandomString(10);
-const randomStringLength = randomString.length;
-const randomStringFactorial = factorial(randomStringLength);
-
-const fibonacci10 = fibonacci(10);
-
-const topDeckCard = () => `Top card of shuffled deck: ${JSON.stringify(topCard)}`;
-const randomString1 = () => `Random string: ${randomString}`;
-const randomStringLength1 = () => `Length of random string: ${randomStringLength}`;
-const factorialLength = () => `Factorial of length of random string: ${randomStringFactorial}`;
-const fibonacciNumber = () => `10th Fibonacci number: ${fibonacci10}`;
-
-const eight = () => {
-  topDeckCard();
-  randomString1();
-  randomStringLength1();
-  factorialLength();
-  fibonacciNumber();
-};
-
 one();
 two();
 three();
 four();
 five();
 six();
-seven();
-eight();
-
-const onePointOne = () => {
-  const firstName1 = 'John';
-  const lastName1 = 'Doe';
-  const age1 = 30;
-  const email1 = 'johndoe@example.com';
-  const address1 = '123 Main St, Anytown USA';
-  const occupation1 = 'Web Developer';
-  const hobbies1 = ['reading', 'gaming', 'hiking'];
-  const education1 = {
-    degree: 'Bachelor of Science in Computer Science',
-    school: 'University of Anytown',
-  };
-  const experience1 = [
-    {
-      title: 'Web Developer',
-      company: 'ABC Company',
-      startDate: '01/01/2018',
-      endDate: '01/01/2020',
-    },
-    {
-      title: 'Software Engineer',
-      company: 'XYZ Corporation',
-      startDate: '01/01/2020',
-      endDate: 'Present',
-    },
-  ];
-
-  function displayPersonalData1() {
-    const message = `${firstName1} ${lastName1} is a ${occupation1} and loves ${hobbies1[0]}, ${hobbies1[1]} and ${hobbies1[2]}. Contact him at ${email1} or visit hime on ${address1}.`;
-    return message;
-  }
-
-  function greet1() {
-    const message = `Hello, my name is ${firstName1} ${lastName1}. I am ${age1} years old.`;
-    return message;
-  }
-
-  function displayEducation1() {
-    const message = `I graduated from ${education1.school} with a ${education1.degree} degree.`;
-    return message;
-  }
-
-  function displayExperience1() {
-    let message = '';
-    experience1.forEach((exp) => {
-      message += `${exp.title} at ${exp.company} from ${exp.startDate} to ${exp.endDate}\n`;
-    });
-    return message;
-  }
-
-  const message5 = greet1();
-  const message6 = displayEducation1();
-  const message7 = displayExperience1();
-  const message8 = displayPersonalData1();
-
-  return `${message5} ${message6} ${message7} ${message8}`;
-};
-
-onePointOne();
