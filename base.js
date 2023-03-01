@@ -224,7 +224,7 @@ module.exports = {
       { max: 300, skipBlankLines: true, skipComments: true },
     ], // https://eslint.org/docs/rules/max-lines
     'max-nested-callbacks': ['warn', { max: 5 }], // https://eslint.org/docs/rules/max-nested-callbacks
-    'max-params': ['warn', { max: 3 }], // https://eslint.org/docs/rules/max-params
+    'max-params': 'off', // https://eslint.org/docs/rules/max-params
     'max-statements': 'off', // https://eslint.org/docs/rules/max-statements
     'max-statements-per-line': ['error', { max: 2 }], // https://eslint.org/docs/rules/max-statements-per-line
     'multiline-ternary': ['off', 'always-multiline'], // https://eslint.org/docs/rules/multiline-ternary

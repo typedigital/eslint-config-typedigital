@@ -4,4 +4,4 @@ const eadibles = [...fruits];
 
 const invoke = () => eadibles;
 
-envoke();
+invoke();
