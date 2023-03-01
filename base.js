@@ -65,7 +65,7 @@ module.exports = {
     'array-bracket-spacing': ['error', 'never'], // https://eslint.org/docs/rules/array-bracket-spacing
     'array-callback-return': ['warn'], // https://eslint.org/docs/rules/array-callback-return
     'array-element-newline': ['warn', 'consistent'], // https://eslint.org/docs/rules/array-element-newline
-    'array-func/prefer-array-from': 'warn', // https://github.com/freaktechnik/eslint-plugin-array-func#examples-2
+    'array-func/prefer-array-from': 'off', // https://github.com/freaktechnik/eslint-plugin-array-func#examples-2
     'array-func/prefer-flat': 'off', // https://github.com/freaktechnik/eslint-plugin-array-func#prefer-flat
     'array-func/prefer-flat-map': 'warn', // https://github.com/freaktechnik/eslint-plugin-array-func#prefer-flat-map
     'arrow-body-style': ['error', 'as-needed'], // https://eslint.org/docs/rules/arrow-body-style
