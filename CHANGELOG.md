@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 7.3.0 (2023-03-10)
+
+
+### Features
+
+* max lines limit ([#112](https://github.com/typedigital/eslint-config-typedigital/issues/112)) ([cd5a788](https://github.com/typedigital/eslint-config-typedigital/commit/cd5a78867bf7c93badffcdd2eb3cb08977286a57))
+
 ### 7.2.2 (2023-03-01)
 
 ### 7.2.1 (2023-03-01)
