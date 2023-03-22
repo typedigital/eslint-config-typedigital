@@ -363,6 +363,7 @@ module.exports = {
         'no-loop-func': 'off', // covered by @typescript-eslint/no-loop-func
         'no-loss-of-precision': 'off', // covered by @typescript-eslint/no-loss-of-precision
         'no-redeclare': 'off', // covered by @typescript-eslint/no-redeclare
+        'no-shadow': 'off', // covered by  @typescript-eslint/no-shadow
         'no-undef': 'off', // off because typescript handles it on its own
         'no-unused-vars': 'off', // covered by @typescript-eslint/no-unused-vars
         'no-useless-constructor': 'off', // covered by @typescript-eslint/no-useless-constructor
