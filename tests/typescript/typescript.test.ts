@@ -41,4 +41,18 @@ describe('typescript config', () => {
     expect(result.errorCount).toBe(1);
     expect(result.messages.some((message) => message.ruleId === '@typescript-eslint/no-non-null-assertion')).toBe(true);
   });
+
+  it('should not produce a warning "no-shadow" when using an enum in TypeScript', async () => {
+    // arrange
+    const linter = new ESLint();
+    const fileName = 'tests/typescript/enum.ts';
+
+    // act
+    const [result] = await linter.lintFiles([fileName]);
+
+    // assert
+    expect(result.warningCount).toBe(0);
+    expect(result.errorCount).toBe(0);
+    expect(result.messages.some((message) => message.ruleId === 'no-shadow')).toBe(false);
+  });
 });

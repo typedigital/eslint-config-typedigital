@@ -14,7 +14,7 @@ describe('base config', () => {
     expect(result.warningCount).toBe(0);
     expect(result.messages.some((message) => message.ruleId === 'array-func/prefer-array-from')).toBe(false);
   });
-  
+
   it('should allow up to 500 lines in a js-file', async () => {
     // arrange
     const linter = new ESLint();
@@ -31,7 +31,7 @@ describe('base config', () => {
     expect(failingResult.warningCount).toBe(1);
     expect(failingResult.messages.some((message) => message.ruleId === 'max-lines')).toBe(true);
   });
-  
+
   it('should allow more then 3 params passed to function', async () => {
     // arrange
     const linter = new ESLint();
@@ -43,5 +43,16 @@ describe('base config', () => {
     // assert
     expect(result.warningCount).toBe(0);
   });
+  it('should produce a warning for shadowed variables', async () => {
+    // arrange
+    const linter = new ESLint();
+    const fileName = 'tests/base/no-shadow.js';
 
+    // act
+    const [result] = await linter.lintFiles([fileName]);
+
+    // assert
+    expect(result.warningCount).toBe(1);
+    expect(result.messages.some((message) => message.ruleId === 'no-shadow')).toBe(true);
+  });
 });
