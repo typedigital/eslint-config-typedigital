@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 7.3.3 (2023-05-03)
+
+
+### Bug Fixes
+
+* enum already declared in upper scope in ts ([#117](https://github.com/typedigital/eslint-config-typedigital/issues/117)) ([ec7ea6b](https://github.com/typedigital/eslint-config-typedigital/commit/ec7ea6b79c4e5b8a61e943fd6b609a367c16dc6a))
+
 ### 7.3.2 (2023-03-15)
 
 ### 7.3.1 (2023-03-14)
