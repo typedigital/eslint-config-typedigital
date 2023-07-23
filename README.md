@@ -83,6 +83,21 @@ To use our TypeScript configuration you just need to add the following to your `
 
 > Note that you can use the React and React Native configuration with this configuration, too. Just add the other configurations after `"@typedigital/eslint-config/typescript"`.
 
+### @typedigital/eslint-config/styled-components
+
+Additional rules for [Styled Components](https://styled-components.com/) development.
+To add them to your project adjust your `.eslintrc` like this:
+
+```js
+{
+    "extends": [
+        "@typedigital/eslint-config",
+        "@typedigital/eslint-config/styled-components",
+    ],
+    "root": true
+}
+```
+
 ## Recommendations
 
 Sometimes, there is a legitimate use-case to disable a specific rule. You can disable a rule for the current line like this
