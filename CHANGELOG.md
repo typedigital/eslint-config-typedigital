@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 7.4.0 (2024-02-27)
+
+
+### Features
+
+* added documentation to styled components rules ([#90](https://github.com/typedigital/eslint-config-typedigital/issues/90)) ([5c16be8](https://github.com/typedigital/eslint-config-typedigital/commit/5c16be89c4cb2a6d5a166aabfa69a3a42000f92f))
+
 ### 7.3.3 (2023-05-03)
 
 
